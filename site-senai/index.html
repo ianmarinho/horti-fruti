@@ -16,49 +16,108 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Inclua o FontAwesome (v5.7.0) via CDN -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-   
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
 
 
     <style>
-        /* Estilos para a barra de pesquisa */
-        .page-pesquisa {
-            display: flex;
-            align-items: center;
-            background-color: #f8f9fa; /* Cor de fundo */
-            padding-top: 30px;
-            padding-bottom: 30px;
+        /* Estilos para a barra de navegação */
+
+        .navbar {
+            background-color: white !important;
+            /* Cor de fundo da barra de navegação em branco */
+
+            /* margem para o resto do html*/
+            padding-bottom: 20px;
+
         }
 
-        .navbar-brand img {
-            margin-right: 10px; /* Espaço entre a imagem e a barra de pesquisa */
+        .navbar-nav .nav-link {}
+
+        /* Estilizar o link ativo */
+
+        .navbar-nav .nav-link.active {
+
+            /* Pode adicionar negrito ao link ativo, se desejar */
         }
 
-        .search-box {
-            display: flex;
-            align-items: center;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            padding: 5px;
+        --------------------------------------------------------------------------------------------------------
+        /*titulo cards*/
+
+        h5.col-12 {
+            text-align: left;
+            margin-left: 15px;
+            /* Ajuste a margem conforme necessário */
         }
 
-        .search-input {
-            border: none;
-            outline: none;
-            padding: 8px; /* Aumentar o tamanho da caixa de pesquisa */
-            width: 300px; /* Largura da caixa de pesquisa */
+        --------------------------------------------------------------------------------------------------------
+
+        /* Estilos para a seção de Atendimento */
+        .widget-title {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 10px;
         }
 
-        .search-icon {
-            color: #d3d3d3; /* Cor preta */
-            font-size: 1rem; /* Tamanho menor */
+        .widget p {
+            margin-bottom: 10px;
         }
 
-        /* Estilos opcionais para ajustar o tamanho e espaçamento */
-        /* .search-box {
-                width: 400px;
-                margin: 10px auto;
-            } */
+        .widget i {
+            margin-right: 10px;
+            font-size: 18px;
+            color: #229A00;
+            /* Cor para os ícones */
+        }
+
+        /* Estilos para os links */
+        .widget-links ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .widget-links li {
+            margin-bottom: 5px;
+        }
+
+        .widget-links a {
+            text-decoration: none;
+            color: #229A00;
+            /* Cor para os links */
+        }
+
+        /* Estilos para o aviso no rodapé */
+        .aviso-rodape p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        /* Estilizar os títulos das seções */
+        h3.widget-title {
+            color: #229A00;
+        }
+
+        /* Estilos para os links do rodapé */
+        .widget-links ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .widget-links li {
+            margin-bottom: 10px;
+        }
+
+        .widget-links a {
+            text-decoration: none;
+            color: #229A00;
+            transition: color 0.3s ease;
+        }
+
+        .widget-links a:hover {
+            color: #007bff;
+            /* Altere para a cor desejada no hover */
+        }
     </style>
 
 </head>
@@ -95,7 +154,7 @@
         </section>
 
 
-        <section class="page-pesquisa">
+        <section class="page-logo">
             <nav class="navbar bg-body-tertiary">
                 <div class="container">
                     <a class="navbar-brand" href="#">
@@ -103,20 +162,20 @@
                     </a>
                 </div>
             </nav>
-            <div class="search-box">
-                <input class="search-input" type="text" placeholder="Olá, qual produto você quer comprar ?">
-                <i class="fas fa-search search-icon"></i>
-            </div>
+
         </section>
 
 
         <section class="section page-main">
             <div class="container">
+                <div class="row">
+                    <h5 class="col-12"> Legumes </h5>
+                </div>
                 <div class="row justify-content-center">
                     <div class="col-md-2 mb-4 custom-col mx-3">
                         <!-- Card 1 -->
                         <div class="card" style="width: 15rem;">
-                            <img src="imagens/organicos-miller-alface-crespa-organica-miller-12un-embaladas-individualmente-1660128705.jpg"
+                            <img src="/imagens/legumes/sementes-cenoura-nantes-calibrada-media-daucus-carota-l_2nd.jpg"
                                 class="card-img-top" alt="Imagem da alface">
                             <div class="card-body text-center">
                                 <h5 class="card-title">Alface Verde</h5>
@@ -128,12 +187,10 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="col-md-2 mb-4 custom-col mx-3">
                         <!-- Card 2 -->
                         <div class="card" style="width: 15rem;">
-                            <img src="imagens/organicos-miller-alface-crespa-organica-miller-12un-embaladas-individualmente-1660128705.jpg"
-                                class="card-img-top" alt="Imagem da alface">
+                            <img src="/imagens/legumes/707_6.jpg" class="card-img-top" alt="Imagem da alface">
                             <div class="card-body text-center">
                                 <h5 class="card-title">Alface Verde</h5>
                                 <p class="card-text">Descrição da alface ou informações relevantes.</p>
@@ -144,12 +201,11 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="col-md-2 mb-4 custom-col mx-3">
                         <!-- Card 2 -->
                         <div class="card" style="width: 15rem;">
-                            <img src="imagens/organicos-miller-alface-crespa-organica-miller-12un-embaladas-individualmente-1660128705.jpg"
-                                class="card-img-top" alt="Imagem da alface">
+                            <img src="/imagens/legumes/tipos-de-abobora.jpg" class="card-img-top"
+                                alt="Imagem da alface">
                             <div class="card-body text-center">
                                 <h5 class="card-title">Alface Verde</h5>
                                 <p class="card-text">Descrição da alface ou informações relevantes.</p>
@@ -160,12 +216,10 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="col-md-2 mb-4 custom-col mx-3">
                         <!-- Card 2 -->
                         <div class="card" style="width: 15rem;">
-                            <img src="imagens/organicos-miller-alface-crespa-organica-miller-12un-embaladas-individualmente-1660128705.jpg"
-                                class="card-img-top" alt="Imagem da alface">
+                            <img src="/imagens/legumes/download (1).jfif" class="card-img-top" alt="Imagem da alface">
                             <div class="card-body text-center">
                                 <h5 class="card-title">Alface Verde</h5>
                                 <p class="card-text">Descrição da alface ou informações relevantes.</p>
@@ -176,12 +230,10 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="col-md-2 mb-4 custom-col mx-3">
                         <!-- Card 2 -->
                         <div class="card" style="width: 15rem;">
-                            <img src="imagens/organicos-miller-alface-crespa-organica-miller-12un-embaladas-individualmente-1660128705.jpg"
-                                class="card-img-top" alt="Imagem da alface">
+                            <img src="/imagens/legumes/download.jfif" class="card-img-top" alt="Imagem da alface">
                             <div class="card-body text-center">
                                 <h5 class="card-title">Alface Verde</h5>
                                 <p class="card-text">Descrição da alface ou informações relevantes.</p>
@@ -192,7 +244,6 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
 
                 <!-- Repita esta estrutura para cada grupo de 5 cards -->
@@ -283,16 +334,100 @@
             </div>
         </section>
 
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <section class="widget">
+                        <h3 class="widget-title">Atendimento</h3>
 
+                        <p>
+							<i class="icon-phone"></i>
+							(28) 99936-1170
+						</p>
 
+                        <p class="no-print">
+                            <i class="fab fa-whatsapp"></i>
+                            <a href="https://api.whatsapp.com/send?phone=5528999361170" target="_blank" style="color: #229A00;">(28) 99936-1170</a>
+                        </p>
+                        
 
+                        <p>
+                            <i class="icon-mail"></i>
+                            <a class="text-dark" href="mailto:folhaverdenfe@gmail.com" style="color: #229A00;">folhaverdenfe@gmail.com</a>
+                        </p>
+                        
 
+                        <p>
+                            <i class="icon-clock"></i>
+                            Horário de Atendimento:
+                        </p>
 
+                        <ul class="list-unstyled text-sm" style="margin-left: 30px;">
+                            <li>
+                                <p>Segunda-Sexta: 08:00 - 18:00<br>
+                                    Sábado: 08:30 - 18:00</p>
+                            </li>
+                        </ul>
 
+                    </section>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <section class="widget widget-links widget-footer-links">
+                        <h3 class="widget-title">Links</h3>
+                        <ul>
+                            <li>
+                                <a href="/loja/departamentos/">Departamentos / Categorias</a>
+                            </li>
+                            <li>
+                                <a href="/loja/combos/">Combos e Kits</a>
+                            </li>
+                            <li>
+                                <a href="/loja/ofertas-clube/">Ofertas Clube</a>
+                            </li>
+                            <li>
+                                <a href="/loja/fale-conosco/">Fale Conosco</a>
+                            </li>
+                            <li class="hidden-on-mobile">
+                                <a href="/loja/trabalhe-conosco/">Trabalhe Conosco</a>
+                            </li>
+                            <li>
+                                <a href="/loja/faq/">Perguntas Frequentes</a>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
 
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 links-app-rodape">
+                    <section class="widget widget-links hidden-on-app hidden-on-mobile">
+                        <!-- Conteúdo do widget de links -->
+                    </section>
+                </div>
 
+            </div>
+            <div class="row aviso-rodape">
+                <div class="col-sm-12">
+                    <p>* Informamos que os preços, ofertas e condições de pagamento são exclusivos para internet e app
+                        válidos para o dia de hoje, podendo sofrer alterações sem aviso prévio.<br>
+                        * As ações/promoções do site são destinadas à pessoas físicas, podendo ser utilizadas em uma
+                        compra por CPF, não sendo cumulativas.<br>
+                        * O pedido será concluído de acordo com a disponibilidade em nosso estoque. Caso ocorra a falta
+                        de algum item, este não será entregue e o valor correspondente não será cobrado. O valor total
+                        de sua compra poderá ter uma variação de 10% (para mais ou menos) em virtude dos produtos de
+                        peso variável.&nbsp;<br>
+                        * Para melhor atender nossos clientes, não vendemos por atacado e reservamo-nos o direito de
+                        limitar, por cliente, a quantidade dos produtos com preços promocionais.<br>
+                        <br>
+                        <strong>A venda e o consumo de bebidas alcoólicas são proibidos para menores de 18
+                            anos.</strong><br>
+                        Bebida alcoólica pode causar dependência química e, em excesso, provoca graves males à saúde.
+                        Beba com moderação
+                    </p>
+                </div>
+            </div>
+        </div>
 
-    </div>
 
 </body>
 
