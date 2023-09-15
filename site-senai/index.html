@@ -52,7 +52,18 @@
 
         --------------------------------------------------------------------------------------------------------
 
+        /* Estilo personalizado para a postagem do blog */
+        .blog-post {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #fff;
+        }
 
+        .text-container {
+            padding-left: 20px;
+            /* Espaçamento à esquerda para o conteúdo de texto */
+        }
 
 
 
@@ -175,9 +186,8 @@
 
 
         <section class="page-logo">
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #229A00;">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -195,123 +205,148 @@
                 </div>
             </nav>
         </section>
-        
-        
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <section class="section page-main">
-            <div class="container">
+        <div class="container">
+            <div class="blog-1" style="display: flex; flex-direction: column;">
                 <div class="row">
-                    <h5 class="col-12"> Legumes </h5>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-md-2 mb-4 custom-col mx-3">
-                        <!-- Card 1 -->
-                        <div class="card" style="width: 15rem;">
-                            <img src="/imagens/legumes/abobora.jpg" class="card-img-top" alt="Imagem da alface">
-                            <div class="card-body text-center">
-                                <h5 class="card-title">Alface Verde</h5>
-                                <p class="card-text">Descrição da alface ou informações relevantes.</p>
-                                <div class="d-flex justify-content-center">
-                                    <a href="#" class="btn btn-success btn-sm mx-2">Saiba Mais</a>
-                                    <a href="#" class="btn btn-success btn-sm mx-2">Receitinhas</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-2 mb-4 custom-col mx-3">
-                        <!-- Card 2 -->
-                        <div class="card" style="width: 15rem;">
-                            <img src="/imagens/legumes/batata doce.jfif" class="card-img-top" alt="Imagem da alface">
-                            <div class="card-body text-center">
-                                <h5 class="card-title">Alface Verde</h5>
-                                <p class="card-text">Descrição da alface ou informações relevantes.</p>
-                                <div class="d-flex justify-content-center">
-                                    <a href="#" class="btn btn-success btn-sm mx-2">Saiba Mais</a>
-                                    <a href="#" class="btn btn-success btn-sm mx-2">Receitinhas</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-2 mb-4 custom-col mx-3">
-                        <!-- Card 2 -->
-                        <div class="card" style="width: 15rem;">
-                            <img src="/imagens/legumes/cenoura.jpg" class="card-img-top" alt="Imagem da alface">
-                            <div class="card-body text-center">
-                                <h5 class="card-title">Alface Verde</h5>
-                                <p class="card-text">Descrição da alface ou informações relevantes.</p>
-                                <div class="d-flex justify-content-center">
-                                    <a href="#" class="btn btn-success btn-sm mx-2">Saiba Mais</a>
-                                    <a href="#" class="btn btn-success btn-sm mx-2">Receitinhas</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-2 mb-4 custom-col mx-3">
-                        <!-- Card 2 -->
-                        <div class="card" style="width: 15rem;">
-                            <img src="/imagens/legumes/rabanete.jpg" class="card-img-top" alt="Imagem da alface">
-                            <div class="card-body text-center">
-                                <h5 class="card-title">Alface Verde</h5>
-                                <p class="card-text">Descrição da alface ou informações relevantes.</p>
-                                <div class="d-flex justify-content-center">
-                                    <a href="#" class="btn btn-success btn-sm mx-2">Saiba Mais</a>
-                                    <a href="#" class="btn btn-success btn-sm mx-2">Receitinhas</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-2 mb-4 custom-col mx-3">
-                        <!-- Card 2 -->
-                        <div class="card" style="width: 15rem;">
-                            <img src="/imagens/legumes/pimentao.jpg" class="card-img-top" alt="Imagem da alface">
-                            <div class="card-body text-center">
-                                <h5 class="card-title">Alface Verde</h5>
-                                <p class="card-text">Descrição da alface ou informações relevantes.</p>
-                                <div class="d-flex justify-content-center">
-                                    <a href="#" class="btn btn-success btn-sm mx-2">Saiba Mais</a>
-                                    <a href="#" class="btn btn-success btn-sm mx-2">Receitinhas</a>
-                                </div>
-                            </div>
+                    <!-- Primeira postagem -->
+                    <div class="col">
+                        <div class="blog-post">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <img src="/imagens/imagens-do-horti/2.jpg" alt="Descrição da imagem" class="img-fluid" style="margin-bottom: 20px;">
+                                    </td>
+                                    <td class="text-container">
+                                        <h1>Hidroponia</h1>
+                                        <p>A hidroponia é a técnica de cultivar plantas sem solo, onde as raízes recebem uma solução nutritiva balanceada que contém água e todos os nutrientes essenciais ao desenvolvimento da planta. Na hidroponia as raízes podem estar suspensas em meio liquido ou apoiadas em substrato inerte.</p>
+                                    </td>
+                                </tr>
+                            </table>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <!-- Repita esta estrutura para cada grupo de 5 cards -->
+            <section class="section cards-1">
+                <div class="container">
+                    <div class="row">
+                        <h5 class="col-12"> Legumes </h5>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-md-2 mb-4 custom-col mx-3">
+                            <!-- Card 1 -->
+                            <div class="card" style="width: 15rem;">
+                                <img src="/imagens/legumes/abobora.jpg" class="card-img-top" alt="Imagem da alface">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Alface Verde</h5>
+                                    <p class="card-text">Descrição da alface ou informações relevantes.</p>
+                                    <div class="d-flex justify-content-center">
+                                        <a href="#" class="btn btn-success btn-sm mx-2">Saiba Mais</a>
+                                        <a href="#" class="btn btn-success btn-sm mx-2">Receitinhas</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 mb-4 custom-col mx-3">
+                            <!-- Card 2 -->
+                            <div class="card" style="width: 15rem;">
+                                <img src="/imagens/legumes/batata doce.jfif" class="card-img-top"
+                                    alt="Imagem da alface">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Alface Verde</h5>
+                                    <p class="card-text">Descrição da alface ou informações relevantes.</p>
+                                    <div class="d-flex justify-content-center">
+                                        <a href="#" class="btn btn-success btn-sm mx-2">Saiba Mais</a>
+                                        <a href="#" class="btn btn-success btn-sm mx-2">Receitinhas</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 mb-4 custom-col mx-3">
+                            <!-- Card 2 -->
+                            <div class="card" style="width: 15rem;">
+                                <img src="/imagens/legumes/cenoura.jpg" class="card-img-top" alt="Imagem da alface">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Alface Verde</h5>
+                                    <p class="card-text">Descrição da alface ou informações relevantes.</p>
+                                    <div class="d-flex justify-content-center">
+                                        <a href="#" class="btn btn-success btn-sm mx-2">Saiba Mais</a>
+                                        <a href="#" class="btn btn-success btn-sm mx-2">Receitinhas</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 mb-4 custom-col mx-3">
+                            <!-- Card 2 -->
+                            <div class="card" style="width: 15rem;">
+                                <img src="/imagens/legumes/rabanete.jpg" class="card-img-top" alt="Imagem da alface">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Alface Verde</h5>
+                                    <p class="card-text">Descrição da alface ou informações relevantes.</p>
+                                    <div class="d-flex justify-content-center">
+                                        <a href="#" class="btn btn-success btn-sm mx-2">Saiba Mais</a>
+                                        <a href="#" class="btn btn-success btn-sm mx-2">Receitinhas</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 mb-4 custom-col mx-3">
+                            <!-- Card 2 -->
+                            <div class="card" style="width: 15rem;">
+                                <img src="/imagens/legumes/abobora.jpg" class="card-img-top" alt="Imagem da alface">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Alface Verde</h5>
+                                    <p class="card-text">Descrição da alface ou informações relevantes.</p>
+                                    <div class="d-flex justify-content-center">
+                                        <a href="#" class="btn btn-success btn-sm mx-2">Saiba Mais</a>
+                                        <a href="#" class="btn btn-success btn-sm mx-2">Receitinhas</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
 
+            <!-- Segunda postagem -->
+            <div class="blog-2" style="display: flex; flex-direction: column; border: solid 3px black;">
+                <div class="row">
+                    <div class="col">
+                        <div class="blog-post">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <h1>Título Criativo</h1>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in ligula id
+                                            tellus euismod tristique. Sed euismod est eu ex cursus, ac bibendum quam
+                                            facilisis.</p>
+
+                                    </td>
+                                    <td class="text-container" style="border: solid 3px blue;">
+                                        <img src="/imagens/imagens-do-horti/1.jpg" alt="Descrição da imagem"
+                                            style="width: 75%; margin-bottom: 20px;">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <!-- Repita esta estrutura para cada grupo de 5 cards -->
+
+            <section class="section cards-2">
                 <div class="row justify-content-center mt-4">
                     <div class="col-md-2 mb-4 custom-col mx-3">
                         <!-- Card 6 -->
                         <div class="card" style="width: 15rem;">
-                            <img src="imagens/organicos-miller-alface-crespa-organica-miller-12un-embaladas-individualmente-1660128705.jpg"
+                            <img src="/imagens/legumes/abobora.jpg"
                                 class="card-img-top" alt="Imagem da alface">
                             <div class="card-body text-center">
                                 <h5 class="card-title">Alface Verde</h5>
@@ -323,11 +358,10 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="col-md-2 mb-4 custom-col mx-3">
                         <!-- Card 6 -->
                         <div class="card" style="width: 15rem;">
-                            <img src="imagens/organicos-miller-alface-crespa-organica-miller-12un-embaladas-individualmente-1660128705.jpg"
+                            <img src="/imagens/legumes/batata doce.jfif"
                                 class="card-img-top" alt="Imagem da alface">
                             <div class="card-body text-center">
                                 <h5 class="card-title">Alface Verde</h5>
@@ -339,11 +373,10 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="col-md-2 mb-4 custom-col mx-3">
                         <!-- Card 6 -->
                         <div class="card" style="width: 15rem;">
-                            <img src="imagens/organicos-miller-alface-crespa-organica-miller-12un-embaladas-individualmente-1660128705.jpg"
+                            <img src="/imagens/legumes/rabanete.jpg"
                                 class="card-img-top" alt="Imagem da alface">
                             <div class="card-body text-center">
                                 <h5 class="card-title">Alface Verde</h5>
@@ -355,11 +388,10 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="col-md-2 mb-4 custom-col mx-3">
                         <!-- Card 6 -->
                         <div class="card" style="width: 15rem;">
-                            <img src="imagens/organicos-miller-alface-crespa-organica-miller-12un-embaladas-individualmente-1660128705.jpg"
+                            <img src="/imagens/legumes/cenoura.jpg"
                                 class="card-img-top" alt="Imagem da alface">
                             <div class="card-body text-center">
                                 <h5 class="card-title">Alface Verde</h5>
@@ -371,11 +403,10 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="col-md-2 mb-4 custom-col mx-3">
                         <!-- Card 6 -->
                         <div class="card" style="width: 15rem;">
-                            <img src="imagens/organicos-miller-alface-crespa-organica-miller-12un-embaladas-individualmente-1660128705.jpg"
+                            <img src="/imagens/legumes/abobora.jpg"
                                 class="card-img-top" alt="Imagem da alface">
                             <div class="card-body text-center">
                                 <h5 class="card-title">Alface Verde</h5>
@@ -387,11 +418,9 @@
                             </div>
                         </div>
                     </div>
-
-
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
 
         <div class="container">
             <div class="row">
