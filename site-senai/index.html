@@ -32,13 +32,19 @@
 
         }
 
-        .navbar-nav .nav-link {}
-
         /* Estilizar o link ativo */
+        .navbar-nav .nav-link {
+        }
 
-        .navbar-nav .nav-link.active {
 
-            /* Pode adicionar negrito ao link ativo, se desejar */
+
+        @font-face {
+            font-family: 'alivia';
+            src: url(/fontes/AliviaRegular.ttf) format('truetype');
+        }
+
+        #cabecalhoName {
+            font-family: alivia;
         }
 
         --------------------------------------------------------------------------------------------------------
@@ -49,6 +55,7 @@
             margin-left: 15px;
             /* Ajuste a margem conforme necessário */
         }
+
 
         --------------------------------------------------------------------------------------------------------
 
@@ -64,21 +71,6 @@
             padding-left: 20px;
             /* Espaçamento à esquerda para o conteúdo de texto */
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -158,81 +150,102 @@
     <div class="container-fluid">
 
         <!-- Page Header -->
-        <section class="section page-header">
-            <!-- Navbar -->
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#" style="color: #229A00; " id="cabecalhoName">Nutri-Verde</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#" >Receitas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Hidroponia</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 d-flex justify-content-end align-items-center">
+                    <section class="widget widget-links widget-footer-links">
+                        <ul class="foot-social"
+                            style="list-style: none; padding: 0; padding-right: 20px; display: flex;">
+                            <li>
+                                <a href="https://www.instagram.com/relvaverde/?hl=pt-br" target="_blank"
+                                    title="Relva Verde no Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Sobre</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Contato</a>
+                            <li>
+                                <a href="https://www.facebook.com/lojarelvaverde/" target="_blank"
+                                    title="Fan Page da Relva Verde">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
                             </li>
                         </ul>
-                    </div>
+                    </section>
                 </div>
-            </nav>
-        </section>
+            </div>
+        </nav>
 
 
-        <section class="page-logo">
-            <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #229A00;">
-                <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Receitas</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Saiba Mais</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </section>
+
+
+
+
+
 
         <div class="container">
-            <div class="blog-1" style="background-color: #ddd ; padding: 20px; margin-bottom: 40px; border: 1px solid #f0f0f0; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);">
+
+            <!-------------------------------------------------------- Primeira Postagem ------------------------------------------------------>
+            <div class="blog-1"
+                style="display: flex; flex-direction: column; padding: 20px; margin-bottom: 20px; background-color: #f8f8f8; border-radius: 15px; ">
                 <div class="row">
-                    <!-- Primeira postagem -->
                     <div class="col-lg-6 col-md-12 col-sm-12">
-                        <div class="blog-post" style="background-color: #fff; padding: 20px; border: 1px solid #ddd; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+                        <div class="blog-post"
+                            style="display: flex; flex-direction: row; align-items: center; background-color: ; padding: 20px; ">
                             <div class="d-flex justify-content-center">
-                                <img src="/imagens/imagens-do-horti/2.jpg" alt="Descrição da imagem" class="img-fluid" style="width: 80%; border-radius: 10px;">
+                                <img src="/imagens/imagens-do-horti/2.jpg" alt="Descrição da imagem" class="img-fluid"
+                                    style="border-radius: 10px;">
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-12 col-sm-12">
+
+                    <div class="col-lg-6 col-md-12 col-sm-12  d-flex align-items-center">
                         <div class="text-container" style="padding: 20px;">
-                            <h1 style="color: #333; font-size: 24px; font-weight: bold;">Hidroponia</h1>
-                            <p style="color: #666; text-align: justify; font-size: 16px;">A hidroponia é a técnica de cultivar plantas sem solo, onde as raízes recebem uma
-                                solução nutritiva balanceada que contém água e todos os nutrientes essenciais ao
-                                desenvolvimento da planta. Na hidroponia as raízes podem estar suspensas em meio
-                                líquido ou apoiadas em substrato inerte.</p>
+                            <h1 style="color: #333; font-size: 24px; font-weight: bold; text-align: center;">Hidroponia
+                            </h1>
+                            <p style="color: #666; text-align: justify; font-size: 16px;">Hidroponia é uma técnica de
+                                cultivo de plantas que não envolve o uso de solo. Em vez disso, as plantas são
+                                cultivadas em soluções nutritivas à base de água, nas quais todos os nutrientes
+                                essenciais para o crescimento das plantas são fornecidos de maneira equilibrada. A
+                                palavra "hidroponia" deriva do grego "hydro" (água) e "ponos" (trabalho), o que
+                                significa "trabalho na água".
+
+                                Nesse método de cultivo, as raízes das plantas podem estar suspensas em meio líquido ou
+                                apoiadas em um substrato inerte, como perlita, vermiculita ou fibra de coco. A água é
+                                enriquecida com nutrientes como nitrogênio, fósforo, potássio e vários micronutrientes,
+                                garantindo que as plantas recebam tudo o que precisam para crescer saudáveis.
+                                A hidroponia é amplamente utilizada na produção de vegetais de folhas verdes, ervas,
+                                tomates, pimentões e outros produtos agrícolas em todo o mundo. Ela desempenha um papel
+                                importante na agricultura moderna, especialmente em regiões onde o solo é pobre em
+                                nutrientes ou o acesso à água é limitado.</p>
                         </div>
                     </div>
                 </div>
             </div>
-            
-            
-            
-            
-            
+
+            <!---------------------------------------------- Cards ------------------------------------------------------------>
 
             <section class="section cards-1">
                 <div class="container">
@@ -314,42 +327,64 @@
                     </div>
             </section>
 
-            <!-- Post-2 -->
-            <div class="blog-1" style="display: flex; flex-direction: column; background-color: #f8f8f8; padding: 20px; margin-bottom: 20px;">
+            <!-------------------------------------------------------- Segunda Postagem ------------------------------------------------------>
+
+            <div class="blog-1"
+                style="display: flex; flex-direction: column; padding: 20px; margin-bottom: 20px; background-color: #f8f8f8; border-radius: 15px;">
                 <div class="row">
-                    <!-- Primeira postagem -->
-                    <div class="col">
-                        <div class="blog-post" style="display: flex; flex-direction: row; align-items: center; background-color: #fff; padding: 20px;">
-                            <div class="text-container" style="flex: 1;">
-                                <h1 style="color: #333;"> Benefícios para a saúde ao consumir alimentos hidropônicos:</h1>
-                                <p style="color: #666;">
-                                    Nutrientes Concentrados
-                                    <br>
-                                    Ausência de Pesticidas e Herbicidas
-                                    <br>
-                                    Menor Risco de Contaminação Microbiana
-                                    <br>
-                                    Melhor Qualidade e Sabor
-                                    <br>
-                                    Menor Necessidade de Uso de Água
-                                    <br>
-                                    Colheitas Mais Rápidas e Constantes
-                                    <br>
-                                    Baixo Teor de Gordura</p>
-                            </div>
-                            <div style="flex: 1;">
-                                <img src="/imagens/imagens-do-horti/2.jpg" alt="Descrição da imagem" class="img-fluid" style="margin-bottom: 20px;  width: 90%;">
-                            </div>
+                    <!-- Texto à esquerda -->
+                    <div class="col-lg-6 col-md-12 col-sm-12 d-flex align-items-center">
+                        <div class="text-container" style="padding: 20px;">
+                            <h1 style="color: #333; font-size: 24px; font-weight: bold; text-align: center;"> Benefícios
+                                para a Saúde ao
+                                Consumir Alimentos Hidropônicos
+                            </h1>
+                            <p style="color: #666; text-align: justify; font-size: 16px;">
+                                <br>
+                                1. Nutrientes Concentrados
+                                <br>
+                                2. Ausência de Pesticidas e Herbicidas
+                                <br>
+                                3. Menor Risco de Contaminação Microbiana:
+                                <br>
+                                4. Melhor Qualidade e Sabor
+                                <br>
+                                5. Menor Necessidade de Uso de Água
+                                <br>
+                                6. Colheitas Mais Rápidas e Constantes
+                                <br>
+                                7. Baixo Teor de Gordura
+                                <br>
+                                8. Acesso a Produtos Locais e Sazonais
+                                <br>
+                                9. Maior Sustentabilidade
+                                <br>
+                                Conclusão:
+                                Os alimentos hidropônicos não apenas oferecem uma alternativa mais saudável aos
+                                alimentos convencionais, mas também apresentam um potencial significativo para melhorar
+                                a segurança alimentar global, reduzir a dependência de pesticidas e herbicidas, e
+                                permitir a produção sustentável em ambientes urbanos e limitados.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Imagem à direita -->
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="blog-post"
+                            style="display: flex; justify-content-center; align-items: center; padding: 20px;">
+                            <img src="/imagens/imagens-do-horti/2.jpg" alt="Descrição da imagem" class="img-fluid"
+                                style="max-width: 100%; border-radius: 10px;">
                         </div>
                     </div>
                 </div>
             </div>
-            
-            
 
-            <!-- Cards-2 -->
+            <!---------------------------------------------- Cards ------------------------------------------------------------>
 
             <section class="section cards-2">
+                <div class="row">
+                    <h5 class="col-12"> Legumes </h5>
+                </div>
                 <div class="row justify-content-center mt-4">
                     <div class="col-md-2 mb-4 custom-col mx-3">
                         <!-- Card 6 -->
@@ -430,63 +465,41 @@
                 <div class="col-lg-4">
                     <section class="widget">
                         <h3 class="widget-title">Atendimento</h3>
-                        <p style="color: #229A00;">
-                            <i class="fas fa-phone" style="color: #229A00 !important;"></i>
+                        <p>
+                            <i class="fas fa-phone" style="color: #888;"></i>
                             (63) 99279-1987
                         </p>
-
+        
                         <p class="no-print">
-                            <i class="fab fa-whatsapp" style="color: #229A00 !important;"></i>
-                            <a href="https://api.whatsapp.com/send?phone=5563992791987" target="_blank"
-                                style="color: #229A00 !important;">(63) 99279-1987</a>
+                            <i class="fab fa-whatsapp" style="color: #888;"></i>
+                            <a href="https://api.whatsapp.com/send?phone=5563992791987" target="_blank" style="text-decoration: none; color: inherit;">(63) 99279-1987</a>
                         </p>
-
+                        
+                        
+                        
+        
                         <p>
-                            <i class="fas fa-envelope" style="color: #229A00 !important;"></i>
-                            <a class="text-dark" href="mailto:folhaverdenfe@gmail.com"
-                                style="color: #229A00 !important;">folhaverdenfe@gmail.com</a>
+                            <i class="fas fa-envelope" style="color: #888;"></i>
+                            <a class="text-dark" href="mailto:folhaverdenfe@gmail.com">folhaverdenfe@gmail.com</a>
                         </p>
-
-                        <p style="color: #229A00;">
-                            <i class="far fa-clock" style="color: #229A00 !important;"></i>
+        
+                        <p>
+                            <i class="far fa-clock" style="color: #;"></i>
                             Horário de Atendimento:
                         </p>
-
+        
                         <ul class="list-unstyled text-sm" style="margin-left: 30px;">
                             <li>
-                                <p style="color: #229A00;">Segunda-Sexta: 08:00 - 18:00<br>
+                                <p>Segunda-Sexta: 08:00 - 18:00<br>
                                     Sábado: 08:30 - 18:00</p>
                             </li>
                         </ul>
-
-
                     </section>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <section class="widget widget-links widget-footer-links">
-                        <h3 class="widget-title">Links</h3>
-                        <ul>
-                            <li>
-                                <a href="/loja/departamentos/">Departamentos / Categorias</a>
-                            </li>
-                            <li>
-                                <a href="/loja/combos/">Combos e Kits</a>
-                            </li>
-                            <li>
-                                <a href="/loja/ofertas-clube/">Ofertas Clube</a>
-                            </li>
-                            <li>
-                                <a href="/loja/fale-conosco/">Fale Conosco</a>
-                            </li>
-                            <li class="hidden-on-mobile">
-                                <a href="/loja/trabalhe-conosco/">Trabalhe Conosco</a>
-                            </li>
-                            <li>
-                                <a href="/loja/faq/">Perguntas Frequentes</a>
-                            </li>
-                        </ul>
-                    </section>
-                </div>
+                        <h3 class="widget-title">Links</h
+        
 
                 <!-- Add the "Rede Sociais" section here with horizontal alignment -->
                 <div class="col-lg-4 col-md-6">
