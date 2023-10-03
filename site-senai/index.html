@@ -21,11 +21,11 @@
 
 
     <style>
-        body {
-            margin: 0;
+        body,html {
             padding: 0;
-
+            margin: 0;
         }
+
 
         /* Estilos para a barra de navegação */
 
@@ -114,7 +114,18 @@
             /* Cor para os links */
         }
 
+
+
+
         /* Estilos para o aviso no rodapé */
+
+        .aviso-rodape {
+            width: 100%;
+            padding-top: 20px;      
+            margin-right: 0;
+        }
+
+
         .aviso-rodape p {
             font-size: 14px;
             color: #666;
@@ -151,7 +162,8 @@
 
 <body>
 
-    <div class="container">
+    <div class="container-fluid">
+
 
         <!----------------------------------------------------- Page Header ---------------------------------------------------------------->
 
@@ -189,8 +201,9 @@
 
 
         <!-------------------------------------------------------- Primeira Postagem ------------------------------------------------------>
-        <div class="container">
 
+
+        <div class="container">
             <div class="blog-1"
                 style="display: flex; flex-direction: column; padding: 20px; margin-bottom: 20px; background-color: #f8f8f8; border-radius: 15px; ">
                 <div class="row">
@@ -225,97 +238,103 @@
                     </div>
                 </div>
             </div>
-            <!---------------------------------------------- Cards ------------------------------------------------------------>
-            <section class="cards-1 d-flex justify-content-center" style="padding-bottom: 40px;">
-                <div class="row justify-content-center mt-4">
-                    <div class="col-md-2 mb-4 custom-col mx-3">
-                        <div class="card mx-2" style="width: 15rem; background-color: #0f560441;">
-                            <img src="/imagens/cards 1/rucula.png" class="card-img-top" alt="...">
-                            <div class="card-body text-center" style="background-color: #f8f8f8;">
-                                <h5 class="card-title">Rucula</h5>
-                                <p class="card-text">
-                                    A rúcula é um vegetal, possui sabor picante como a mostarda, porém mais forte e
-                                    amargo. É
-                                    rica em fibras que auxiliam e facilitam a digestão e o funcionamento do intestino.
-                                </p>
-                                <div class="d-flex justify-content-center">
-                                    <a href="#" class="card-link"
-                                        style="color: #229A00; text-decoration: none;">Receitas</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-2 mb-4 custom-col mx-3">
-                        <div class="card mx-2" style="width: 15rem; background-color: #0f560441;">
-                            <img src="/imagens/cards 1/agriao.png" class="card-img-top" alt="...">
-                            <div class="card-body text-center" style="background-color: #f8f8f8;">
-                                <h5 class="card-title">Agrião</h5>
-                                <p class="card-text">
-                                    O agrião é uma verdura bastante conhecida, dona de um sabor levemente picante e
-                                    amargo, e
-                                    capaz de fornecer vitaminas que fazem muito bem para nossa saúde.
-                                </p>
-                                <div class="d-flex justify-content-center">
-                                    <a href="#" class="card-link"
-                                        style="color: #229A00; text-decoration: none;">Receitas</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-2 mb-4 custom-col mx-3">
-                        <div class="card mx-2" style="width: 15rem; background-color: #0f560441;">
-                            <img src="/imagens/cards 1/mangericao.png" class="card-img-top" alt="...">
-                            <div class="card-body text-center" style="background-color: #f8f8f8;">
-                                <h5 class="card-title">Manjericão</h5>
-                                <p class="card-text">
-                                    O manjericão, é uma erva aromática, suas folhas são utilizadas como tempero
-                                    especialmente em
-                                    países tropicais da Ásia e na cozinha italiana com produtos naturais.
-                                </p>
-                                <div class="d-flex justify-content-center">
-                                    <a href="#" class="card-link"
-                                        style="color: #229A00; text-decoration: none;">Receitas</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-2 mb-4 custom-col mx-3">
-                        <div class="card mx-2" style="width: 15rem; background-color: #0f560441;">
-                            <img src="/imagens/cards 1/salsa.png" class="card-img-top" alt="...">
-                            <div class="card-body text-center" style="background-color: #f8f8f8;">
-                                <h5 class="card-title">Salsa</h5>
-                                <p class="card-text">
-                                    A salsa, está presente em todo o mundo como hortaliça e condimento. Ela ressalta o
-                                    sabor da
-                                    comida, é utilizada como erva medicinal, graças às suas propriedades nutricionais.
-                                </p>
-                                <div class="d-flex justify-content-center">
-                                    <a href="#" class="card-link"
-                                        style="color: #229A00; text-decoration: none;">Receitas</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-2 mb-4 custom-col mx-3">
-                        <div class="card mx-2" style="width: 15rem; background-color: #0f560441;">
-                            <img src="/imagens/cards 1/mini-couve.png" class="card-img-top" alt="...">
-                            <div class="card-body text-center" style="background-color: #f8f8f8;">
-                                <h5 class="card-title">Mini-Couve</h5>
-                                <p class="card-text">
-                                    Geralmente com folhas mais tenras e delicadas. Essa couve é apreciada na culinária
-                                    por sua textura suave
-                                    e sabor ligeiramente adocicado em comparação com a couve tradicional.
-                                </p>
-                                <div class="d-flex justify-content-center">
-                                    <a href="#" class="card-link"
-                                        style="color: #229A00; text-decoration: none;">Receitas</a>
-                                </div>
+        </div>
+        <!---------------------------------------------- Cards ------------------------------------------------------------>
+        <section class="cards-1 d-flex justify-content-center" style="padding-bottom: 40px;">
+            <div class="row justify-content-center mt-4">
+                <div class="col-md-2 mb-4 custom-col mx-3">
+                    <div class="card mx-2" style="width: 15rem; background-color: #0f560441;">
+                        <img src="/imagens/cards 1/rucula.png" class="card-img-top" alt="...">
+                        <div class="card-body text-center" style="background-color: #f8f8f8;">
+                            <h5 class="card-title">Rucula</h5>
+                            <p class="card-text">
+                                A rúcula é um vegetal, possui sabor picante como a mostarda, porém mais forte e
+                                amargo. É
+                                rica em fibras que auxiliam e facilitam a digestão e o funcionamento do intestino.
+                            </p>
+                            <div class="d-flex justify-content-center">
+                                <a href="#" class="card-link"
+                                    style="color: #229A00; text-decoration: none;">Receitas</a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-            <!-------------------------------------------------------- Segunda Postagem ------------------------------------------------------>
+                <div class="col-md-2 mb-4 custom-col mx-3">
+                    <div class="card mx-2" style="width: 15rem; background-color: #0f560441;">
+                        <img src="/imagens/cards 1/agriao.png" class="card-img-top" alt="...">
+                        <div class="card-body text-center" style="background-color: #f8f8f8;">
+                            <h5 class="card-title">Agrião</h5>
+                            <p class="card-text">
+                                O agrião é uma verdura bastante conhecida, dona de um sabor levemente picante e
+                                amargo, e
+                                capaz de fornecer vitaminas que fazem muito bem para nossa saúde.
+                            </p>
+                            <div class="d-flex justify-content-center">
+                                <a href="#" class="card-link"
+                                    style="color: #229A00; text-decoration: none;">Receitas</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 mb-4 custom-col mx-3">
+                    <div class="card mx-2" style="width: 15rem; background-color: #0f560441;">
+                        <img src="/imagens/cards 1/mangericao.png" class="card-img-top" alt="...">
+                        <div class="card-body text-center" style="background-color: #f8f8f8;">
+                            <h5 class="card-title">Manjericão</h5>
+                            <p class="card-text">
+                                O manjericão, é uma erva aromática, suas folhas são utilizadas como tempero
+                                especialmente em
+                                países tropicais da Ásia e na cozinha italiana com produtos naturais.
+                            </p>
+                            <div class="d-flex justify-content-center">
+                                <a href="#" class="card-link"
+                                    style="color: #229A00; text-decoration: none;">Receitas</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 mb-4 custom-col mx-3">
+                    <div class="card mx-2" style="width: 15rem; background-color: #0f560441;">
+                        <img src="/imagens/cards 1/salsa.png" class="card-img-top" alt="...">
+                        <div class="card-body text-center" style="background-color: #f8f8f8;">
+                            <h5 class="card-title">Salsa</h5>
+                            <p class="card-text">
+                                A salsa, está presente em todo o mundo como hortaliça e condimento. Ela ressalta o
+                                sabor da
+                                comida, é utilizada como erva medicinal, graças às suas propriedades nutricionais.
+                            </p>
+                            <div class="d-flex justify-content-center">
+                                <a href="#" class="card-link"
+                                    style="color: #229A00; text-decoration: none;">Receitas</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 mb-4 custom-col mx-3">
+                    <div class="card mx-2" style="width: 15rem; background-color: #0f560441;">
+                        <img src="/imagens/cards 1/mini-couve.png" class="card-img-top" alt="...">
+                        <div class="card-body text-center" style="background-color: #f8f8f8;">
+                            <h5 class="card-title">Mini-Couve</h5>
+                            <p class="card-text">
+                                Geralmente com folhas mais tenras e delicadas. Essa couve é apreciada na culinária
+                                por sua textura suave
+                                e sabor ligeiramente adocicado em comparação com a couve tradicional.
+                            </p>
+                            <div class="d-flex justify-content-center">
+                                <a href="#" class="card-link"
+                                    style="color: #229A00; text-decoration: none;">Receitas</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-------------------------------------------------------- Segunda Postagem ------------------------------------------------------>
+
+
+        <div class="container">
             <div class="blog-2"
                 style="display: flex; flex-direction: column; padding: 20px; margin-bottom: 20px; background-color: #f8f8f8; border-radius: 15px;">
                 <div class="row">
@@ -364,172 +383,184 @@
                     </div>
                 </div>
             </div>
-            <!---------------------------------------------- Cards ------------------------------------------------------------>
-            <section class="cards-2 d-flex justify-content-center" style="padding-bottom: 40px;">
-                <div class="row justify-content-center mt-4">
-                    <div class="col-md-2 mb-4 custom-col mx-3">
-                        <div class="card mx-2" style="width: 15rem; background-color: #0f560441;">
-                            <img src="/imagens/cards 2/alface crespa.png" class="card-img-top" alt="...">
-                            <div class="card-body text-center" style="background-color: #f8f8f8;">
-                                <h5 class="card-title"> Alface Crespa</h5>
-                                <p class="card-text">
-                                    Folhas mais resistentes e possui uma textura mais robusta em comparação com a alface
-                                    mimosa.
-                                </p>
-                                <div class="d-flex justify-content-center">
-                                    <a href="#" class="card-link"
-                                        style="color: #229A00; text-decoration: none;">Receitas</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-2 mb-4 custom-col mx-3">
-                        <div class="card mx-2" style="width: 15rem; background-color: #0f560441;">
-                            <img src="/imagens/cards 2/alface mimosa.png" class="card-img-top" alt="...">
-                            <div class="card-body text-center" style="background-color: #f8f8f8;">
-                                <h5 class="card-title"> Alface Mimosa </h5>
-                                <p class="card-text">
-                                    Suas folhas tendem a ser mais crocantes e têm uma textura ligeiramente mais frágil.
-                                </p>
-                                <div class="d-flex justify-content-center">
-                                    <a href="#" class="card-link"
-                                        style="color: #229A00; text-decoration: none;">Receitas</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-2 mb-4 custom-col mx-3">
-                        <div class="card mx-2" style="width: 15rem; background-color: #0f560441;">
-                            <img src="/imagens/cards 2/alface romana.png" class="card-img-top" alt="...">
-                            <div class="card-body text-center" style="background-color: #f8f8f8;">
-                                <h5 class="card-title"> Alface Romana </h5>
-                                <p class="card-text">
-                                    Suas folhas longas e firmes, que são ideais para enrolar e fazer wraps. Ela tem um
-                                    sabor
-                                    ligeiramente amargo.
-                                </p>
-                                <div class="d-flex justify-content-center">
-                                    <a href="#" class="card-link"
-                                        style="color: #229A00; text-decoration: none;">Receitas</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-2 mb-4 custom-col mx-3">
-                        <div class="card mx-2" style="width: 15rem; background-color: #0f560441;">
-                            <img src="/imagens/cards 2/alface lisa.png" class="card-img-top" alt="...">
-                            <div class="card-body text-center" style="background-color: #f8f8f8;">
-                                <h5 class="card-title"> Alface Lisa</h5>
-                                <p class="card-text">
-                                    Suas folhas sâo lisas e macias. Possui um sabor suave e é muito usada em saladas e
-                                    sanduíches.
-                                </p>
-                                <div class="d-flex justify-content-center">
-                                    <a href="#" class="card-link"
-                                        style="color: #229A00; text-decoration: none;">Receitas</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-2 mb-4 custom-col mx-3">
-                        <div class="card mx-2" style="width: 15rem; background-color: #0f560441;">
-                            <img src="/imagens/cards 2/alface goumet.png" class="card-img-top" alt="...">
-                            <div class="card-body text-center" style="background-color: #f8f8f8;">
-                                <h5 class="card-title"> Alface Gourmet </h5>
-                                <p class="card-text">
-                                    refere a variedades de alface, cultivados de forma mais cuidadosa, isso pode incluir
-                                    tipos diferentes de alface.
-                                </p>
-                                <div class="d-flex justify-content-center">
-                                    <a href="#" class="card-link"
-                                        style="color: #229A00; text-decoration: none;">Receitas</a>
-                                </div>
+        </div>
+
+
+        <!---------------------------------------------- Cards ------------------------------------------------------------>
+
+
+        <section class="cards-2 d-flex justify-content-center" style="padding-bottom: 40px; ">
+            <div class="row justify-content-center mt-4">
+                <div class="col-md-2 mb-4 custom-col mx-3">
+                    <div class="card mx-1" style="width: 14rem; background-color: #0f560441;">
+                        <img src="/imagens/cards 2/alface crespa.png" class="card-img-top" alt="...">
+                        <div class="card-body text-center" style="background-color: #f8f8f8;">
+                            <h5 class="card-title"> Alface Crespa</h5>
+                            <p class="card-text">
+                                Folhas mais resistentes e possui uma textura mais robusta em comparação com a alface
+                                mimosa.
+                            </p>
+                            <div class="d-flex justify-content-center">
+                                <a href="#" class="card-link"
+                                    style="color: #229A00; text-decoration: none;">Receitas</a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-
-
-            <!-- ----------------------------Rodapé---------------------------------------------- -->
-
-
-
-
-            <div class="row aviso-rodape">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-4">
-                            <section class="widget">
-                                <h3 class="widget-title" style="color: #229A00;">Atendimento</h3>
-                                <p>
-                                    <i class="fas fa-phone" style="color: #229A00;"></i>
-                                    (28) 99936-1170
-                                </p>
-                                <p class="no-print">
-                                    <i class="fab fa-whatsapp" style="color: #229A00;"></i>
-                                    <a href="https://api.whatsapp.com/send?phone=5528999361170" target="_blank"
-                                        style="text-decoration: none; color: #333;">(28) 99936-1170</a>
-                                </p>
-                                <p>
-                                    <i class="fas fa-envelope" style="color: #229A00;"></i>
-                                    <a href="mailto:folhaverdenfe@gmail.com" class="text-dark"
-                                        style="text-decoration: none; color: #f8f8f8;">folhaverdenfe@gmail.com</a>
-                                </p>
-                                <p>
-                                    <i class="far fa-clock" style="color: #229A00;"></i>
-                                    Horário de Atendimento:
-                                </p>
-                                <ul class="list-unstyled text-sm" style="margin-left: 30px;">
-                                    <li>
-                                        <p style="color: #f8f8f8;">Segunda-Sexta: 08:00 - 18:00<br>
-                                            Sábado: 08:30 - 18:00</p>
-                                    </li>
-                                </ul>
-                            </section>
+                <div class="col-md-2 mb-4 custom-col mx-3">
+                    <div class="card mx-1" style="width: 14rem; background-color: #0f560441;">
+                        <img src="/imagens/cards 2/alface mimosa.png" class="card-img-top" alt="...">
+                        <div class="card-body text-center" style="background-color: #f8f8f8;">
+                            <h5 class="card-title"> Alface Mimosa </h5>
+                            <p class="card-text">
+                                Suas folhas tendem a ser mais crocantes e têm uma textura ligeiramente mais frágil.
+                            </p>
+                            <div class="d-flex justify-content-center">
+                                <a href="#" class="card-link"
+                                    style="color: #229A00; text-decoration: none;">Receitas</a>
+                            </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 ml-md-auto">
-                            <section class="widget widget-links widget-footer-links">
-                                <h3 class="widget-title">Links</h3>
-                                <ul>
-                                    <li>
-                                        <i class="fas fa-link"></i>
-                                        <a href="/loja/departamentos/" class="text-dark"
-                                            style="text-decoration: none; color: #f8f8f8;">Departamentos /
-                                            Categorias</a>
-                                    </li>
-                                    <li>
-                                        <i class="fas fa-link"></i>
-                                        <a href="/loja/combos/" class="text-dark"
-                                            style="text-decoration: none; color: #f8f8f8;">Combos e Kits</a>
-                                    </li>
-                                    <li>
-                                        <i class="fas fa-link"></i>
-                                        <a href="/loja/ofertas-clube/" class="text-dark"
-                                            style="text-decoration: none; color: #f8f8f8;">Ofertas Clube</a>
-                                    </li>
-                                    <li>
-                                        <i class="fas fa-link"></i>
-                                        <a href="/loja/fale-conosco/" class="text-dark"
-                                            style="text-decoration: none; color: #f8f8f8;">Fale Conosco</a>
-                                    </li>
-                                    <li class="hidden-on-mobile">
-                                        <i class="fas fa-link"></i>
-                                        <a href="/loja/trabalhe-conosco/" class="text-dark"
-                                            style="text-decoration: none; color: #f8f8f8;">Trabalhe Conosco</a>
-                                    </li>
-                                    <li>
-                                        <i class="fas fa-link"></i>
-                                        <a href="/loja/faq/" class="text-dark"
-                                            style="text-decoration: none; color: #f8f8f8;">Perguntas Frequentes</a>
-                                    </li>
-                                </ul>
-                            </section>
+                    </div>
+                </div>
+                <div class="col-md-2 mb-4 custom-col mx-3">
+                    <div class="card mx-1" style="width: 14rem; background-color: #0f560441;">
+                        <img src="/imagens/cards 2/alface romana.png" class="card-img-top" alt="...">
+                        <div class="card-body text-center" style="background-color: #f8f8f8;">
+                            <h5 class="card-title"> Alface Romana </h5>
+                            <p class="card-text">
+                                Suas folhas longas e firmes, que são ideais para enrolar e fazer wraps. Ela tem um
+                                sabor
+                                ligeiramente amargo.
+                            </p>
+                            <div class="d-flex justify-content-center">
+                                <a href="#" class="card-link"
+                                    style="color: #229A00; text-decoration: none;">Receitas</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 mb-4 custom-col mx-3">
+                    <div class="card mx-1" style="width: 14rem; background-color: #0f560441;">
+                        <img src="/imagens/cards 2/alface lisa.png" class="card-img-top" alt="...">
+                        <div class="card-body text-center" style="background-color: #f8f8f8;">
+                            <h5 class="card-title"> Alface Lisa</h5>
+                            <p class="card-text">
+                                Suas folhas sâo lisas e macias. Possui um sabor suave e é muito usada em saladas e
+                                sanduíches.
+                            </p>
+                            <div class="d-flex justify-content-center">
+                                <a href="#" class="card-link"
+                                    style="color: #229A00; text-decoration: none;">Receitas</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 mb-4 custom-col mx-3">
+                    <div class="card mx-1" style="width: 14rem; background-color: #0f560441;">
+                        <img src="/imagens/cards 2/alface goumet.png" class="card-img-top" alt="...">
+                        <div class="card-body text-center" style="background-color: #f8f8f8;">
+                            <h5 class="card-title"> Alface Gourmet </h5>
+                            <p class="card-text">
+                                refere a variedades de alface, cultivados de forma mais cuidadosa, isso pode incluir
+                                tipos diferentes de alface.
+                            </p>
+                            <div class="d-flex justify-content-center">
+                                <a href="#" class="card-link"
+                                    style="color: #229A00; text-decoration: none;">Receitas</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
+
+
+
+
+
+
+        <!-- ----------------------------Rodapé---------------------------------------------- -->
+
+
+
+        <div class="row aviso-rodape" style="border-top: solid 3px; border-color: #229A00; ">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <section class="widget" style="padding-left: 5px;">
+                            <!-- Resto do conteúdo da coluna esquerda -->
+                            <h3 class="widget-title" style="color: #229A00;">Atendimento</h3>
+                            <p>
+                                <i class="fas fa-phone" style="color: #229A00;"></i>
+                                (28) 99936-1170
+                            </p>
+                            <p class="no-print">
+                                <i class="fab fa-whatsapp" style="color: #229A00;"></i>
+                                <a href="https://api.whatsapp.com/send?phone=5528999361170" target="_blank"
+                                    style="text-decoration: none; color: #333;">(28) 99936-1170</a>
+                            </p>
+                            <p>
+                                <i class="fas fa-envelope" style="color: #229A00;"></i>
+                                <a href="mailto:folhaverdenfe@gmail.com" class="text-dark"
+                                    style="text-decoration: none; color: #f8f8f8;">folhaverdenfe@gmail.com</a>
+                            </p>
+                            <p>
+                                <i class="far fa-clock" style="color: #229A00;"></i>
+                                Horário de Atendimento:
+                            </p>
+                            <ul class="list-unstyled text-sm" style="margin-left: 30px;">
+                                <li>
+                                    <p style="color: #f8f8f8;">Segunda-Sexta: 08:00 - 18:00<br>
+                                        Sábado: 08:30 - 18:00</p>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                    <div class="col-lg-4 col-md-6 ml-md-auto">
+                        <section class="widget widget-links widget-footer-links" style="margin-right: 0;">
+                            <!-- Resto do conteúdo da coluna direita -->
+                            <h3 class="widget-title">Links</h3>
+                            <ul>
+                                <li>
+                                    <i class="fas fa-link"></i>
+                                    <a href="/loja/departamentos/" class="text-dark"
+                                        style="text-decoration: none; color: #f8f8f8;">Departamentos /
+                                        Categorias</a>
+                                </li>
+                                <li>
+                                    <i class="fas fa-link"></i>
+                                    <a href="/loja/combos/" class="text-dark"
+                                        style="text-decoration: none; color: #f8f8f8;">Combos e Kits</a>
+                                </li>
+                                <li>
+                                    <i class="fas fa-link"></i>
+                                    <a href="/loja/ofertas-clube/" class="text-dark"
+                                        style="text-decoration: none; color: #f8f8f8;">Ofertas Clube</a>
+                                </li>
+                                <li>
+                                    <i class="fas fa-link"></i>
+                                    <a href="/loja/fale-conosco/" class="text-dark"
+                                        style="text-decoration: none; color: #f8f8f8;">Fale Conosco</a>
+                                </li>
+                                <li class="hidden-on-mobile">
+                                    <i class="fas fa-link"></i>
+                                    <a href="/loja/trabalhe-conosco/" class="text-dark"
+                                        style="text-decoration: none; color: #f8f8f8;">Trabalhe Conosco</a>
+                                </li>
+                                <li>
+                                    <i class="fas fa-link"></i>
+                                    <a href="/loja/faq/" class="text-dark"
+                                        style="text-decoration: none; color: #f8f8f8;">Perguntas Frequentes</a>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+            </div>
         </div>
+
+
+    </div>
 
 
 </body>
