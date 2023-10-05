@@ -17,8 +17,6 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
         integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
-    <meta name="description"
-        content="Nutri-Verde - Semeando o Futuro da Agricultura. Descubra os benefícios da hidroponia e alimentos saudáveis.">
 
     <style>
         body,
@@ -33,8 +31,8 @@
         }
 
         @font-face {
-            font-family: 'morica';
-            src: url(/fontes/MoricaScript_PERSONAL_USE_ONLY.otf) format('truetype');
+            font-family: 'dafont';
+            src: url(/fontes/DelagioScript_PERSONAL_USE_ONLY.otf) format('truetype');
         }
 
 
@@ -42,8 +40,8 @@
             font-family: alivia;
         }
 
-        #h1inicio {
-            font-family: morica;
+        #estufaName {
+            font-family: alivia;
         }
 
 
@@ -143,7 +141,10 @@
 
 
 
+        .fotos {
+            font-family: ;
 
+        }
 
 
 
@@ -195,7 +196,7 @@
 
         <!----------------------------------------------------- Page Header ---------------------------------------------------------------->
 
-        <nav class="navbar navbar-expand-lg bg-body-tertiary" style="margin-bottom: 30px; margin-top: 20px;">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html" style="color: #229A00; width: 100px; padding-left: 20px;"
                     id="cabecalhoName">Nutri-Verde</a>
@@ -228,16 +229,25 @@
 
 
 
-        <h1 style="color: #666; margin-bottom: 30px;" id="h1inicio">Bem-vindo à Nutri-Verde - Semeando o Futuro da
-            Agricultura</h1>
 
 
         <div class="container">
             <div class="blog-1"
                 style="display: flex; flex-direction: column; padding: 20px; margin-bottom: 20px; background-color: #f8f8f8; border-radius: 15px; ">
                 <div class="row">
-                    <div class="col d-flex align-items-center">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="blog-post"
+                            style="display: flex; flex-direction: row; align-items: center; background-color: ; padding: 20px; ">
+                            <div class="d-flex justify-content-center">
+                                <img src="/imagens/imagens posts/1.jpg" alt="Descrição da imagem" class="img-fluid"
+                                    style="border-radius: 10px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12  d-flex align-items-center">
                         <div class="text-container" style="padding: 20px;">
+                            <h1 style="color: #333; font-size: 24px; font-weight: bold; text-align: center;">Hidroponia
+                            </h1>
                             <p style="color: #666; text-align: justify; font-size: 16px;">Hidroponia é uma técnica de
                                 cultivo de plantas que não envolve o uso de solo. Em vez disso, as plantas são
                                 cultivadas em soluções nutritivas à base de água, nas quais todos os nutrientes
@@ -259,33 +269,13 @@
         </div>
 
 
-        <div class="container">
-            <div class="blog-1"
-                style="display: flex; flex-direction: column; padding: 20px; margin-bottom: 20px; border-radius: 15px; ">
-                <div class="row">
-                    <div class="col">
-                        <div class="blog-post"
-                            style="display: flex; flex-direction: row; align-items: center; padding: 20px; ">
-                            <div class="d-flex justify-content-center">
-                                <img src="/imagens/imagens posts/4.jpg" alt="Descrição da imagem" class="img-fluid"
-                                    style="border-radius: 10px;">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-
 
         <div class="container">
             <div class="blog-2"
                 style="display: flex; flex-direction: column; padding: 20px; margin-bottom: 20px; background-color: #f8f8f8; border-radius: 15px;">
                 <div class="row">
                     <!-- Texto à esquerda -->
-                    <div class="col d-flex align-items-center">
+                    <div class="col-lg-6 col-md-12 col-sm-12 d-flex align-items-center">
                         <div class="text-container" style="padding: 20px;">
                             <h1 style="color: #333; font-size: 24px; font-weight: bold; text-align: center;"> Benefícios
                                 para a Saúde ao
@@ -319,61 +309,32 @@
                             </p>
                         </div>
                     </div>
+                    <!-- Imagem à direita -->
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="blog-post"
+                            style="display: flex; justify-content-center; align-items: center; padding: 20px;">
+                            <img src="/imagens/imagens posts/2.jpg" alt="Descrição da imagem" class="img-fluid"
+                                style="max-width: 100%; border-radius: 10px;">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
-
-
-        <div class="container">
-            <section class="fotos" style="background-color: ; padding: 10px; margin-bottom: 40px; border-radius: 15px;">
-                <h1 style="color: #333; font-size: 24px; font-weight: bold; text-align: center; color: #229A00;">
-                    Galeria de fotos
-                </h1>
-                <div class="gallery" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 5px;">
-                    <!-- Início das imagens da galeria -->
-                    <div class="gallery-item" style="flex-basis: calc(25.33% - 0px); text-align: center;">
-                        <img src="/imagens/galeria de fotos/1.jpg" alt="Foto 1" style="max-width: 100%; height: auto; border-radius: 10px;">
+        <div class="container-fluid">
+            <div class="blog-sobre">
+                <div class="blog-post">
+                    <div class="d-flex justify-content-center">
+                        <img src="/imagens/imagens posts/4.jpg" alt="Descrição da imagem" class="img-fluid"
+                            style="border-radius: 10px; width: 100%; height: 100%; object-fit: cover;">
                     </div>
-                    <div class="gallery-item" style="flex-basis: calc(25.33% - 0px); text-align: center;">
-                        <img src="/imagens/galeria de fotos/2.jpg" alt="Foto 2" style="max-width: 100%; height: auto; border-radius: 10px;">
-                    </div>
-                    <div class="gallery-item" style="flex-basis: calc(25.33% - 0px); text-align: center;">
-                        <img src="/imagens/galeria de fotos/3.jpg" alt="Foto 3" style="max-width: 100%; height: auto; border-radius: 10px;">
-                    </div>
-                    <div class="gallery-item" style="flex-basis: calc(25.33% - 0px); text-align: center;">
-                        <img src="/imagens/galeria de fotos/4.jpg" alt="Foto 4" style="max-width: 100%; height: auto; border-radius: 10px;">
-                    </div>
-                    <div class="gallery-item" style="flex-basis: calc(25.33% - 0px); text-align: center;">
-                        <img src="/imagens/galeria de fotos/5.jpg" alt="Foto 5" style="max-width: 100%; height: auto; border-radius: 10px;">
-                    </div>
-                    <div class="gallery-item" style="flex-basis: calc(25.33% - 0px); text-align: center;">
-                        <img src="/imagens/galeria de fotos/6.jpg" alt="Foto 6" style="max-width: 100%; height: auto; border-radius: 10px;">
-                    </div>
-                    <div class="gallery-item" style="flex-basis: calc(25.33% - 0px); text-align: center;">
-                        <img src="/imagens/galeria de fotos/7.jpg" alt="Foto 7" style="max-width: 100%; height: auto; border-radius: 10px;">
-                    </div>
-                    <div class="gallery-item" style="flex-basis: calc(25.33% - 0px); text-align: center;">
-                        <img src="/imagens/galeria de fotos/8.jpg" alt="Foto 8" style="max-width: 100%; height: auto; border-radius: 10px;">
-                    </div>
-                    <div class="gallery-item" style="flex-basis: calc(25.33% - 0px); text-align: center;">
-                        <img src="/imagens/galeria de fotos/9.jpg" alt="Foto 9" style="max-width: 100%; height: auto; border-radius: 10px;">
-                    </div>
-                    <!-- Fim das imagens da galeria -->
                 </div>
-            </section>
+            </div>
         </div>
-        
-        
-        
-        
-        
-        
-        
 
         <div class="text-container">
 
-            <p>
+            <p>Bem-vindo à Nutri-Verde - Semeando o Futuro da Agricultura
                 <br>
                 <br>
 
@@ -434,6 +395,65 @@
                 vez.
             </p>
         </div>
+
+
+        <div class="container">
+            <section class="fotos" style="background-color: ; padding: 30px; margin-bottom: 40px; border-radius: 15px;">
+                <h1 style="color: #333; font-size: 24px; font-weight: bold; text-align: center; color: #229A00;">
+                    Galeria de fotos
+                </h1>
+                <div class="gallery" style="display: flex; flex-wrap: wrap; justify-content: center;">
+                    <!-- Início das imagens da galeria -->
+                    <div class="gallery-item"
+                        style="flex-basis: calc(33.33% - 20px); margin: 10px; text-align: center;">
+                        <img src="/imagens/galeria de fotos/1.jpg" alt="Foto 1"
+                            style="max-width: 100%; border-radius: 10px;">
+                    </div>
+                    <div class="gallery-item"
+                        style="flex-basis: calc(33.33% - 20px); margin: 10px; text-align: center;">
+                        <img src="/imagens/galeria de fotos/2.jpg" alt="Foto 2"
+                            style="max-width: 100%; border-radius: 10px;">
+                    </div>
+                    <div class="gallery-item"
+                        style="flex-basis: calc(33.33% - 20px); margin: 10px; text-align: center;">
+                        <img src="/imagens/galeria de fotos/3.jpg" alt="Foto 3"
+                            style="max-width: 100%; border-radius: 10px;">
+                    </div>
+                    <div class="gallery-item"
+                        style="flex-basis: calc(33.33% - 20px); margin: 10px; text-align: center;">
+                        <img src="/imagens/galeria de fotos/4.jpg" alt="Foto 4"
+                            style="max-width: 100%; border-radius: 10px;">
+                    </div>
+                    <div class="gallery-item"
+                        style="flex-basis: calc(33.33% - 20px); margin: 10px; text-align: center;">
+                        <img src="/imagens/galeria de fotos/5.jpg" alt="Foto 5"
+                            style="max-width: 100%; border-radius: 10px;">
+                    </div>
+                    <div class="gallery-item"
+                        style="flex-basis: calc(33.33% - 20px); margin: 10px; text-align: center;">
+                        <img src="/imagens/galeria de fotos/6.jpg" alt="Foto 6"
+                            style="max-width: 100%; border-radius: 10px;">
+                    </div>
+                    <div class="gallery-item"
+                        style="flex-basis: calc(33.33% - 20px); margin: 10px; text-align: center;">
+                        <img src="/imagens/galeria de fotos/7.jpg" alt="Foto 7"
+                            style="max-width: 100%; border-radius: 10px;">
+                    </div>
+                    <div class="gallery-item"
+                        style="flex-basis: calc(33.33% - 20px); margin: 10px; text-align: center;">
+                        <img src="/imagens/galeria de fotos/8.jpg" alt="Foto 8"
+                            style="max-width: 100%; border-radius: 10px;">
+                    </div>
+                    <div class="gallery-item"
+                        style="flex-basis: calc(33.33% - 20px); margin: 10px; text-align: center;">
+                        <img src="/imagens/galeria de fotos/9.jpg" alt="Foto 9"
+                            style="max-width: 100%; border-radius: 10px;">
+                    </div>
+                    <!-- Fim das imagens da galeria -->
+                </div>
+        </div>
+
+
 
         <!-- ----------------------------Rodapé---------------------------------------------- -->
         <div class="row aviso-rodape" style="border-top: solid 3px; border-color: #229A00; ">
