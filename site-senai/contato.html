@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!-- Link para a biblioteca Bootstrap 5.3.1 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Inclua o FontAwesome (v5.7.0) via CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <style>
+        /* Estilos para a barra de navegação */
+
+        .navbar {
+            background-color: white !important;
+            /* Cor de fundo da barra de navegação em branco */
+
+            /* margem para o resto do html*/
+            padding-bottom: 20px;
+
+        }
+
+        /* Estilizar o link ativo */
+        .navbar-nav .nav-link {}
+
+
+
+        @font-face {
+            font-family: 'alivia';
+            src: url(/fontes/AliviaRegular.ttf) format('truetype');
+        }
+
+        #cabecalhoName {
+            font-family: alivia;
+        }
+
+
+
+        /* ---------------------cod-do-formulario------------------------------------ */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: 0;
+        }
+
+        form {
+            max-width: 350px;
+            margin: 10px auto;
+            background-color: #f8f8f8;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #000000;
+
+        }
+
+        h1 {
+            font-size: 18px;
+
+            margin-bottom: 5px;
+            color: #000000;
+
+        }
+
+        input[type="text"],
+        textarea {
+
+
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 9px;
+            border: 2px solid #000000;
+            border-radius: 4px;
+        }
+
+        textarea {
+            height: 90px;
+
+        }
+
+        input[type="submit"] {
+            background-color: #229A00;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            ;
+        }
+
+        input[type="submit"]:hover {}
+
+        .contato {
+            background-color: #ffffff;
+            height: 100% auto;
+            margin: 20px;
+            padding: 22px;
+            border-radius: 10px;
+            font-size: 24px;
+            text-align: center;
+            color: #229A00;
+        }
+
+
+        /* -----------------------------------footer-------------------------- */
+        .footer-ondulado-top {
+            float: left;
+            margin-bottom: -1px;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+            transform: rotate(180deg);
+
+
+        }
+
+        footer {
+            background-color: #219a00ae;
+            /* Define a mesma cor de fundo para o rodapé */
+            color: white;
+            padding: 20px;
+            clear: both;
+            /* Garante que o rodapé fique abaixo da onda */
+
+        }
+
+        .footer-ondulado-top svg {
+
+            float: left;
+            margin-bottom: -1px;
+            display: block;
+            width: calc(148% + 1.3px);
+            height: 75px;
+
+        }
+
+        .footer-ondulado-top .shape-fill {
+
+            fill: #219a00ae;
+
+        }
+
+    
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html" style="color: #229A00; width: 100px; padding-left: 20px;"
+                    id="cabecalhoName">Nutri-Verde</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Receitas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Hidroponia</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="contato">
+            <h1 class="ctt">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="95" fill="currentColor"
+                    class="bi bi-person-lines-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z" />
+                </svg>
+                CONTATO
+            </h1>
+        
+            <form action="https://api.staticforms.xyz/submit" method="post" class="form-inline">
+                <input type="hidden" name="accessKey" value="ef207bb5-d990-43a4-ba70-55f50a1b3327">
+                <div class="form-group">
+                    <h1>Nome</h1>
+                    <input type="text" name="name" placeholder="Digite seu nome" class="form-control">
+                </div>
+                <div class="form-group">
+                    <h1>E-mail</h1>
+                    <input type="text" name="email" placeholder="Digite seu e-mail" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <h1>Telefone</h1>
+                    <input type="text" name="phone" placeholder="(XX) X XXXX-XXXX" class="form-control">
+                </div>
+                <div class="form-group">
+                    <h1>Mensagem</h1>
+                    <textarea name="message" placeholder="Eu gostaria de..." class="form-control"></textarea>
+                </div>
+                <input type="hidden" name="replyTo" value="nutriverde96@gmail.com">
+                <input type="hidden" name="replyTo" value="@">
+                <input type="hidden" name="redirectTo" value="contato.html">
+                <input type="submit" value="Enviar" onclick="meu()" class="btn btn-primary">
+            </form>
+        </div>
+        
+
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous">
+    </script>
+
+    <script>
+        function meu() {
+            alert("Formulário enviado com sucesso!");
+            return false;
+        };
+    </script>
+
+</body>
+
+</html>
