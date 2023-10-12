@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Seu Site</title>
+
+    <!-- Link para a biblioteca Bootstrap 5.3.1 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Inclua o FontAwesome (v5.7.0) via CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <style>
+        /* Estilos para a barra de navegação */
+
+        .navbar {
+            background-color: white !important;
+            /* Cor de fundo da barra de navegação em branco */
+
+            /* margem para o resto do html*/
+            padding-bottom: 20px;
+
+        }
+
+        @font-face {
+            font-family: 'alivia';
+            src: url(/fontes/AliviaRegular.ttf) format('truetype');
+        }
+
+        #cabecalhoName {
+            font-family: alivia;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" style="padding-bottom: 40px;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html" style="color: #229A00; width: 100px; padding-left: 20px;"
+                    id="cabecalhoName">Nutri-Verde</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto justify-content-center">
+                        <!-- Adição da classe justify-content-center -->
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="sobre.html">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="contato copy.html">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Receitas</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- Conteúdo da Página de Contato -->
+        <div class="container-fluid mt-4">
+            <h1 class="mb-4" style="font-family: 'Courier New';">Fale Conosco</h1>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <!-- Formulário de contato aqui -->
+                    <form>
+                        <div class="form-group">
+                            <label for="nome">Nome:</label>
+                            <input type="text" class="form-control" id="nome" placeholder="Seu Nome">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" placeholder="seuemail@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem:</label>
+                            <textarea class="form-control" id="mensagem" rows="4"
+                                placeholder="Digite sua mensagem aqui"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+
+
+                <div class="col-md-6 mb-4 text-center p-5">
+                    <h3>Informações de Contato</h3>
+                    <p><strong>Endereço:</strong> R. Orvalho da Manhã - Parque Sonhos Dourados, Araguaína - TO,
+                        77818-802</p>
+                    <p><strong>Telefone:</strong> 63 992095449</p>
+                    <p><strong>Email:</strong> contato@seusite.com</p>
+                    <div class="social-icons mt-3">
+                        <a href="#" class="btn btn-primary btn-social">
+                            <i class="fab fa-facebook"></i> Facebook
+                        </a>
+                        <a href="#" class="btn btn-info btn-social">
+                            <i class="fab fa-twitter"></i> Twitter
+                        </a>
+                        <a href="#" class="btn btn-danger btn-social">
+                            <i class="fab fa-instagram"></i> Instagram
+                        </a>
+                        <a href="#" class="btn btn-secondary btn-social">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Mapa Incorporado (Exemplo) -->
+        <div class="container mt-4">
+            <h3>Localização</h3>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2001.3516724730289!2d-48.23409062108098!3d-7.183591961463728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92d90d16c8a891e3%3A0xa525180574f15b5f!2sNutriVerde%20Cultivos%20Hidrop%C3%B4nicos!5e1!3m2!1spt-BR!2sbr!4v1697068572061!5m2!1spt-BR!2sbr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <!-- Rodapé -->
+        <footer class="bg-dark text-light text-center py-3">
+            &copy; 2023 Seu Site. Todos os direitos reservados.
+        </footer>
+
+
+    </div>
+
+    <!-- Scripts do Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
