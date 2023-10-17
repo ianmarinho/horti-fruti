@@ -1,14 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Contato - Seu Site</title>
 
+   
     <!-- Link para a biblioteca Bootstrap 5.3.1 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
 
@@ -19,7 +17,18 @@
     <!-- Inclua o FontAwesome (v5.7.0) via CDN -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
         integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+
     <style>
+    
+    /* body */
+
+    body{
+    margin: 0;
+    padding: 0;
+    }
+
+
         /* Estilos para a barra de navegação */
 
         .navbar {
@@ -31,11 +40,6 @@
 
         }
 
-        /* Estilizar o link ativo */
-        .navbar-nav .nav-link {}
-
-
-
         @font-face {
             font-family: 'alivia';
             src: url(/fontes/AliviaRegular.ttf) format('truetype');
@@ -45,119 +49,91 @@
             font-family: alivia;
         }
 
-
-
-        /* ---------------------cod-do-formulario------------------------------------ */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: 0;
+        
+        /* Estilos para a seção de Atendimento */
+        .widget-title {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 10px;
         }
 
-        form {
-            max-width: 350px;
-            margin: 10px auto;
-            background-color: #f8f8f8;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px #000000;
-
+        .widget p {
+            margin-bottom: 10px;
         }
 
-        h1 {
+        .widget i {
+            margin-right: 10px;
             font-size: 18px;
+            color: #229A00;
+            /* Cor para os ícones */
+        }
 
+        /* Estilos para os links */
+        .widget-links ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .widget-links li {
             margin-bottom: 5px;
-            color: #000000;
-
         }
 
-        input[type="text"],
-        textarea {
-
-
-            width: 90%;
-            padding: 10px;
-            margin-bottom: 9px;
-            border: 2px solid #000000;
-            border-radius: 4px;
+        .widget-links a {
+            text-decoration: none;
+            color: #229A00;
+            /* Cor para os links */
         }
 
-        textarea {
-            height: 90px;
 
+        /* Estilos para o aviso no rodapé */
+
+        .aviso-rodape {
+            width: 100%;
+            padding-top: 20px;
+            margin-right: 0;
         }
 
-        input[type="submit"] {
-            background-color: #229A00;
-            color: #ffffff;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 3px;
-            cursor: pointer;
-            ;
+
+        .aviso-rodape p {
+            font-size: 14px;
+            color: #666;
         }
 
-        input[type="submit"]:hover {}
-
-        .contato {
-            background-color: #ffffff;
-            height: 100% auto;
-            margin: 20px;
-            padding: 22px;
-            border-radius: 10px;
-            font-size: 24px;
-            text-align: center;
+        /* Estilizar os títulos das seções */
+        h3.widget-title {
             color: #229A00;
         }
 
-
-        /* -----------------------------------footer-------------------------- */
-        .footer-ondulado-top {
-            float: left;
-            margin-bottom: -1px;
-            left: 0;
-            width: 100%;
-            overflow: hidden;
-            line-height: 0;
-            transform: rotate(180deg);
-
-
+        /* Estilos para os links do rodapé */
+        .widget-links ul {
+            list-style: none;
+            padding: 0;
         }
 
-        footer {
-            background-color: #219a00ae;
-            /* Define a mesma cor de fundo para o rodapé */
-            color: white;
-            padding: 20px;
-            clear: both;
-            /* Garante que o rodapé fique abaixo da onda */
-
+        .widget-links li {
+            margin-bottom: 10px;
         }
 
-        .footer-ondulado-top svg {
-
-            float: left;
-            margin-bottom: -1px;
-            display: block;
-            width: calc(148% + 1.3px);
-            height: 75px;
-
+        .widget-links a {
+            text-decoration: none;
+            color: #229A00;
+            transition: color 0.3s ease;
         }
 
-        .footer-ondulado-top .shape-fill {
-
-            fill: #219a00ae;
-
+        .widget-links a:hover {
+            color: #007bff;
+            /* Altere para a cor desejada no hover */
         }
-
-    
     </style>
 </head>
 
 <body>
+
     <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <!-- Navbar -->
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" style="padding-bottom: 40px;">
             <div class="container">
                 <a class="navbar-brand" href="index.html" style="color: #229A00; width: 100px; padding-left: 20px;"
                     id="cabecalhoName">Nutri-Verde</a>
@@ -166,21 +142,18 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav mx-auto justify-content-center">
+                    <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Início</a>
+                            <a class="nav-link active" aria-current="page" href="index.html">Início</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Sobre</a>
+                            <a class="nav-link active" aria-current="page" href="sobre.html">Sobre</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contato</a>
+                            <a class="nav-link active" aria-current="page" href="contato.html">Contato</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Receitas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Hidroponia</a>
+                            <a class="nav-link active" aria-current="page" href="receitas.html">Receitas</a>
                         </li>
                     </ul>
                 </div>
@@ -188,56 +161,151 @@
         </nav>
 
 
-        <div class="contato">
-            <h1 class="ctt">
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="95" fill="currentColor"
-                    class="bi bi-person-lines-fill" viewBox="0 0 16 16">
-                    <path
-                        d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z" />
-                </svg>
-                CONTATO
-            </h1>
-        
-            <form action="https://api.staticforms.xyz/submit" method="post" class="form-inline">
-                <input type="hidden" name="accessKey" value="ef207bb5-d990-43a4-ba70-55f50a1b3327">
-                <div class="form-group">
-                    <h1>Nome</h1>
-                    <input type="text" name="name" placeholder="Digite seu nome" class="form-control">
+        <!-- Conteúdo da Página de Contato -->
+        <div class="container-fluid mt-4">
+            <h1 class="mb-4" style="font-family: 'Courier New';">Fale Conosco</h1>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <!-- Formulário de contato aqui -->
+                    <form>
+
+                        <div class="form-group">
+                            <label for="nome">Nome:</label>
+                            <input type="text" class="form-control" id="nome" placeholder="Seu Nome">
+                        </div>
+
+                        <div class="form-group" style="margin-top: 10px;">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" placeholder="seuemail@example.com">
+                        </div>
+
+                        <div class="form-group" style="margin-top: 10px;">
+                            <label for="mensagem">Mensagem:</label>
+                            <textarea class="form-control" id="mensagem" rows="4"
+                                placeholder="Digite sua mensagem aqui"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="margin-top: 10px;">Enviar</button>
+
+                    </form>
                 </div>
-                <div class="form-group">
-                    <h1>E-mail</h1>
-                    <input type="text" name="email" placeholder="Digite seu e-mail" class="form-control" />
+
+
+                <div class="col-md-6 mb-4 text-center p-5">
+                    <h1 style="font-family: 'Courier New'; color: black;">Informações de Contato</h1>
+                    <p><strong>Endereço:</strong> R. Orvalho da Manhã - Parque Sonhos Dourados, Araguaína - TO,
+                        77818-802</p>
+                    <p><strong>Telefone:</strong> 63 992095449</p>
+                    <p><strong>Email:</strong> contato@seusite.com</p>
+                    <div class="social-icons mt-3">
+                        <a href="#" class="btn btn-primary btn-social">
+                            <i class="fab fa-facebook"></i> Facebook
+                        </a>
+                        <a href="#" class="btn btn-info btn-social">
+                            <i class="fab fa-twitter"></i> Twitter
+                        </a>
+                        <a href="#" class="btn btn-danger btn-social">
+                            <i class="fab fa-instagram"></i> Instagram
+                        </a>
+
+                        <a href="#" class="btn btn-secondary btn-social">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+
+                    </div>
                 </div>
-                <div class="form-group">
-                    <h1>Telefone</h1>
-                    <input type="text" name="phone" placeholder="(XX) X XXXX-XXXX" class="form-control">
-                </div>
-                <div class="form-group">
-                    <h1>Mensagem</h1>
-                    <textarea name="message" placeholder="Eu gostaria de..." class="form-control"></textarea>
-                </div>
-                <input type="hidden" name="replyTo" value="nutriverde96@gmail.com">
-                <input type="hidden" name="replyTo" value="@">
-                <input type="hidden" name="redirectTo" value="contato.html">
-                <input type="submit" value="Enviar" onclick="meu()" class="btn btn-primary">
-            </form>
+            </div>
         </div>
-        
+
+        <!-- Mapa Incorporado (Exemplo) -->
+        <div class="container mt-4">
+            <h3>Localização</h3>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2001.3516724730289!2d-48.23409062108098!3d-7.183591961463728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92d90d16c8a891e3%3A0xa525180574f15b5f!2sNutriVerde%20Cultivos%20Hidrop%C3%B4nicos!5e1!3m2!1spt-BR!2sbr!4v1697068572061!5m2!1spt-BR!2sbr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+
+        <!-- Rodapé -->
+
+        <div class="aviso-rodape ">
+            <div class="row"
+                style="border-top: solid 3px; padding-top: 15px; border-color: #229A00; background-color: white;">
+                <div class="col-lg-4">
+                    <section class="widget" style="padding-left: 5px;">
+                        <!-- Resto do conteúdo da coluna esquerda -->
+                        <h3 class="widget-title" style="color: #229A00;">Atendimento</h3>
+                        <p>
+                            <i class="fas fa-phone" style="color: #229A00;"></i>
+                            (28) 99936-1170
+                        </p>
+                        <p class="no-print">
+                            <i class="fab fa-whatsapp" style="color: #229A00;"></i>
+                            <a href="https://api.whatsapp.com/send?phone=5528999361170" target="_blank"
+                                style="text-decoration: none; color: #333;" class="text-dark">(28) 99936-1170</a>
+                        </p>
+                        <p>
+                            <i class="fas fa-envelope" style="color: #229A00;"></i>
+                            <a href="mailto:folhaverdenfe@gmail.com" class="text-dark"
+                                style="text-decoration: none; color: #333;">folhaverdenfe@gmail.com</a>
+                        </p>
+                        <p class="text-dark">
+                            <i class="far fa-clock" style="color: #229A00;"></i>
+                            Horário de Atendimento:
+                        </p>
+                        <ul class="list-unstyled text-sm" style="margin-left: 30px;">
+                            <li>
+                                <p style="color: #333;" class="text-dark">Segunda-Sexta: 08:00 - 18:00<br>
+                                    Sábado: 08:30 - 18:00</p>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+
+                <div class="col-lg-4 col-md-6 ml-md-auto">
+                    <section class="widget widget-links widget-footer-links" style="margin-right: 0;">
+                        <!-- Resto do conteúdo da coluna direita -->
+                        <h3 class="widget-title">Links</h3>
+                        <ul>
+                            <li>
+                                <i class="fas fa-link"></i>
+                                <a href="index.html" class="text-dark"
+                                    style="text-decoration: none; color: #f8f8f8;">Início</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-link"></i>
+                                <a href="contato copy.html" class="text-dark"
+                                    style="text-decoration: none; color: #f8f8f8;">Fale Conosco</a>
+                            </li>
+                            <li class="hidden-on-mobile">
+                                <i class="fas fa-link"></i>
+                                <a href="/" class="text-dark" style="text-decoration: none; color: #f8f8f8;">Sobre</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-link"></i>
+                                <a href="copia3.html" class="text-dark"
+                                    style="text-decoration: none; color: #f8f8f8;">Receitas</a>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <footer class="text-center py-3" style="background-color: white; color: #333; margin: 0;">
+            &copy; 2023 Seu Site. Todos os direitos reservados.
+        </footer>
 
 
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-        crossorigin="anonymous">
-    </script>
 
-    <script>
-        function meu() {
-            alert("Formulário enviado com sucesso!");
-            return false;
-        };
-    </script>
+    <!-- Scripts do Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
 
