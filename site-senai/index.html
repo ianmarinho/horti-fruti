@@ -203,7 +203,7 @@
 
         <div class="container">
             <div class="blog-1"
-                style="display: flex; flex-direction: column; padding: 20px; margin-bottom: 40px; background-color: #f8f8f8; border-radius: 15px; ">
+                style="display: flex; flex-direction: column; padding: 20px; margin-bottom: 60px; background-color: #f8f8f8; border-radius: 15px; ">
                 <div class="row">
                     <div class="col-lg-6 col-md-12 col-sm-12">
                         <div class="blog-post"
@@ -247,7 +247,7 @@
                 <div class="row justify-content-center">
 
                     <!-- Card 1 -->
-                    <div class="col-md-2 mb-4 mx-2">
+                    <div class="col-md-3 mb-5">
                         <!-- Conteúdo do Card 1 -->
                         <div class="card" style="border: 1px solid #0f560441;">
                             <!-- Adicione a borda igual à cor do card-2 -->
@@ -272,7 +272,7 @@
                     </div>
 
                     <!-- Card 2 -->
-                    <div class="col-md-2 mb-4 mx-2">
+                    <div class="col-md-3 mb-5">
                         <!-- Conteúdo do Card 2 -->
                         <div class="card" style="border: 1px solid #0f560441;">
                             <!-- Adicione a borda igual à cor do card-2 -->
@@ -297,7 +297,7 @@
                     </div>
 
                     <!-- Card 3 (Manjericão) -->
-                    <div class="col-md-2 mb-4 mx-2">
+                    <div class="col-md-3 mb-5">
                         <!-- Conteúdo do Card 3 -->
                         <div class="card" style="border: 1px solid #0f560441;">
                             <!-- Adicione a borda igual à cor do card-2 -->
@@ -322,7 +322,7 @@
                     </div>
 
                     <!-- Card 4 (Salsa) -->
-                    <div class="col-md-2 mb-4 mx-2">
+                    <div class="col-md-3 mb-5">
                         <!-- Conteúdo do Card 4 -->
                         <div class="card" style="border: 1px solid #0f560441;">
                             <!-- Adicione a borda igual à cor do card-2 -->
@@ -346,30 +346,6 @@
                         </div>
                     </div>
 
-                    <!-- Card 5 (Mini-Couve) -->
-                    <div class="col-md-2 mb-4 mx-2">
-                        <!-- Conteúdo do Card 5 -->
-                        <div class="card" style="border: 1px solid #0f560441;">
-                            <!-- Adicione a borda igual à cor do card-2 -->
-                            <!-- Image Background -->
-                            <div class="card-image-background" style="background-color: #0f560441;">
-                                <img src="/imagens/cards 1/salsa.png" class="card-img-top" alt="...">
-                            </div>
-                            <!-- Text Background -->
-                            <div class="card-text-background" style="background-color: #f8f8f8;">
-                                <div class="card-body">
-                                    <h5 class="card-title" style="color: #229A00; text-align: center;">Mini-Couve</h5>
-                                    <p class="card-text" style="text-align: justify;">Geralmente com folhas mais tenras
-                                        e delicadas. Essa couve é apreciada na culinária por sua textura suave e sabor
-                                        ligeiramente adocicado em comparação com a couve tradicional.</p>
-                                    <div class="d-flex justify-content-center">
-                                        <a href="#" class="card-link" style="color: #229A00; text-decoration: none;"
-                                            onclick="mostrarPopup('MiniCouve Receitas')">Receitas</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
                 </div>
             </div>
@@ -389,11 +365,17 @@
 
         <!-- JavaScript -->
         <script>
+
+            var scrollTop = 0;
+
             function mostrarPopup(title) {
                 var popup = document.getElementById("popup");
                 var overlay = document.getElementById("overlay");
                 var popupTitle = document.getElementById("popupTitle");
                 var popupContent = document.getElementById("popupContent");
+
+                // Salve a posição atual da tela
+                scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
                 if (title === 'Rucula Receitas') {
                     popupTitle.textContent = "Molho pesto de rúcula";
@@ -403,14 +385,14 @@
                     popupTitle.textContent = "Salada de agrião com shoyu";
                     popupContent.innerHTML = "<br>Ingredientes:<br>1 maço de agrião<br>1/2 colher de café de óleo de gergelim<br>Molho shoyu<br>Gengibre ralado<br>Sementes de gergelim torrado<br><br>Modo de preparo:<br>Em um potinho, misture o molho shoyu, o óleo de gergelim e o gengibre;<br>Ferva uma panela com água, coloque o agrião e espere 30 segundos;<br>Escorra o agrião e passe em água fria. Esprema as folhas para retirar o máximo de água;<br>Corte o agrião amassado em pedaços, coloque em uma travessa e regue com o molho por cima;<br>Sirva com as sementes de gergelim para decorar.";
                 } else if (title === 'Manjericao Receitas') {
-                    popupTitle.textContent = "Receitas de Manjericão";
+                    popupTitle.textContent = "Salada caprese";
                     popupContent.innerHTML = "<br> Ingredientes:<br> 3 muçarelas de búfala<br> 5 tomates maduros <br>3 ramos de manjericão <br>azeite a gosto <br>sal e pimenta-do-reino moída na hora a gosto <br> <br> Modo de preparo: <br> Lave, seque e corte cada tomate em 8 gomos: corte e descarte a tampa; apoie a parte cortada na tábua e corte o tomate em cruz, depois, em x, para formar 8 partes. Lave e seque bem as folhas de manjericão. Corte cada muçarela de búfala na metade e depois cada metade em 3 gomos.  Disponha numa travessa os gomos de tomate e de muçarela de búfala, tempere com o sal e a pimenta a gosto e regue com o azeite. Finalize com as folhas de manjericão e sirva a seguir. ";
                 } else if (title === 'Salsa Receitas') {
-                    popupTitle.textContent = "Receitas de Salsa";
+                    popupTitle.textContent = "Molho de salsa verde";
                     popupContent.innerHTML = "<br> Ingredientes: <br>  ½ xícara de salsa (salsinha) fresca <br>1 dente de alho <br>½ xícara de azeite de oliva <br>1 pitada de sal <br> <br> Modo de preparo: <br> Descasque o dente de alho, corte ao meio e retire o miolo dele. Separe as folhas do caule da salsa, lave e seque com papel absorvente.<br> Coloque o alho picado, as folhas de salsa, o azeite e uma pitada de sal no copo do liquidificador ou num copo alto, caso esteja usando o mixer, e bata muito bem. <br> Deixe este molho verde descansar por alguns minutos e estará pronto para servir como molho de churrasco, molho de macarrão e mais! Para preservá-lo, guarde-o na geladeira e retire-o alguns minutos antes de usá-lo.";
                 } else if (title === 'MiniCouve Receitas') {
                     popupTitle.textContent = "Receitas de Mini-Couve";
-                    popupContent.innerHTML = "Adicione aqui as receitas de mini-couve.";
+                    popupContent.innerHTML = " <br>INGREDIENTES: <br> 3 colheres de azeite, em duas etapas <br> ¼ de xícara de cebola picadinha <br> 220g de cogumelos fatiados <br> 1 xícara de trigo sarraceno (ou arroz) <br> Sal a gosto <br> ½ xícara de couve-de-bruxelas, já assadas (ou ervilhas prontas) <br> 2 ½ a 3 xícara de caldo vegetal <br> <br> Modo de preparo: Aqueça 2 colheres de sopa de azeite em uma frigideira média e cozinhe os cogumelos até dourarem e ficarem macios. Tempere com sal e reserve. Em outra frigideira grande, refogue a cebola em azeite por cerca de 1 minuto até que fique macia. Adicione o trigo sarraceno à frigideira com a cebola, tostando por cerca de 1 minuto. Adicione ½ xícara de caldo vegetal ao trigo sarraceno e mexa até que o líquido seja absorvido. Repita o processo, adicionando ½ xícara de caldo de cada vez, até que os grãos estejam macios (cerca de 18-20 minutos). Adicione os cogumelos e couve-de-bruxelas à frigideira e cozinhe por mais 1-2 minutos.Tempere com sal a gosto.Dessa forma, você preparará um prato delicioso de trigo sarraceno com cogumelos e couve-de-bruxelas.";
                 }
 
                 // Exibe o pop-up e a camada semi-transparente
@@ -422,6 +404,12 @@
 
                 // Desativa a rolagem do site
                 document.body.style.overflow = "hidden";
+
+                // Define o popup como position: fixed
+                popup.style.position = "fixed";
+
+                // Mantém a tela na mesma posição
+                window.scrollTo(0, scrollTop);
             }
 
             function fecharPopup() {
@@ -434,7 +422,12 @@
 
                 // Reativa a rolagem do site
                 document.body.style.overflow = "auto";
+
+                // Retorna a tela à posição original
+                window.scrollTo(0, scrollTop);
             }
+
+
         </script>
 
 
@@ -458,6 +451,42 @@
                 width: 100%;
                 margin: 0 auto;
             }
+
+            .popup {
+                display: none;
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: #fff;
+                z-index: 9999;
+                padding: 20px;
+                border: 1px solid #000;
+            }
+
+            .popup-content {
+                position: relative;
+            }
+
+            .close {
+                position: absolute;
+                top: 0;
+                right: 0;
+                padding: 5px;
+                cursor: pointer;
+            }
+
+            .overlay {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.7);
+                z-index: 9998;
+                cursor: pointer;
+            }
         </style>
 
 
@@ -467,7 +496,7 @@
 
         <div class="container">
             <div class="blog-2"
-                style="display: flex; flex-direction: column; padding: 20px; margin-bottom: 40px; background-color: #f8f8f8; border-radius: 15px;">
+                style="display: flex; flex-direction: column; padding: 20px; margin-bottom: 60px; background-color: #f8f8f8; border-radius: 15px;">
                 <div class="row">
                     <!-- Texto à esquerda -->
                     <div class="col-lg-6 col-md-12 col-sm-12 d-flex align-items-center">
@@ -520,13 +549,12 @@
         <!---------------------------------------------- Cards ------------------------------------------------------------>
 
 
-        <section class="cards-2" style="padding-bottom: 40px;">
+        <section class="cards-2" style="padding-bottom: 10px;">
             <div class="container">
                 <div class="row justify-content-center">
-                    <!-- Card 1 -->
 
-                    <div class="col-md-2 mb-4 mx-2">
-                        <!-- ... Conteúdo do Card 1 ... -->
+                    <!-- Card 1 -->
+                    <div class="col-md-3 mb-5">
                         <div class="card" style="border: 1px solid #0f560441;">
                             <!-- Adicione a borda igual à cor do card-2 -->
                             <!-- Image Background -->
@@ -538,15 +566,13 @@
                                 <div class="card-body">
                                     <h5 class="card-title" style="color: #229A00; text-align: center;">Alface Crespa
                                     </h5>
-                                    <p class="card-text" style="text-align: justify;">Folhas mais resistentes e possui
-                                        uma textura mais robusta em comparação com a alface mimosa.
-                                        ㅤ
-                                        ㅤ
-                                        ㅤ
+                                    <p class="card-text" style="text-align: justify;">conhecida por suas folhas
+                                        onduladas e crocantes. Ela é uma opção popular de alface usada em saladas e
+                                        outros pratos devido à sua textura e sabor.
                                     </p>
                                     <div class="d-flex justify-content-center">
-                                        <a href="#" class="card-link"
-                                            style="color: #229A00; text-decoration: none;">Receitas</a>
+                                        <a href="#" class="card-link" style="color: #229A00; text-decoration: none;"
+                                            onclick="mostrarPopup( 'Alface Crespa' )">Receitas</a>
                                     </div>
                                 </div>
                             </div>
@@ -556,39 +582,8 @@
 
                     <!-- Card 2 -->
 
-
-                    <div class="col-md-2 mb-4 mx-2">
-                        <!-- ... Conteúdo do Card 1 ... -->
-                        <div class="card" style="border: 1px solid #0f560441;">
-                            <!-- Adicione a borda igual à cor do card-2 -->
-                            <!-- Image Background -->
-                            <div class="card-image-background" style="background-color: #0f560441;">
-                                <img src="/imagens/cards 2/alface goumet.png " class="card-img-top" alt="...">
-                            </div>
-                            <!-- Text Background -->
-                            <div class="card-text-background" style="background-color: #f8f8f8;">
-                                <div class="card-body">
-                                    <h5 class="card-title" style="color: #229A00; text-align: center;">Alface Gourmet
-                                    </h5>
-                                    <p class="card-text" style="text-align: justify;">refere a variedades de alface,
-                                        cultivados de forma mais cuidadosa, isso pode incluir tipos diferentes de
-                                        alface.
-                                        ㅤ
-                                        ㅤ
-                                    </p>
-                                    <div class="d-flex justify-content-center">
-                                        <a href="#" class="card-link"
-                                            style="color: #229A00; text-decoration: none;">Receitas</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                    <div class="col-md-2 mb-4 mx-2">
-                        <!-- ... Conteúdo do Card 1 ... -->
+                    <div class="col-md-3 mb-5">
+                        <!-- ... Conteúdo do Card 2 ... -->
                         <div class="card" style="border: 1px solid #0f560441;">
                             <!-- Adicione a borda igual à cor do card-2 -->
                             <!-- Image Background -->
@@ -598,12 +593,15 @@
                             <!-- Text Background -->
                             <div class="card-text-background" style="background-color: #f8f8f8;">
                                 <div class="card-body">
-                                    <h5 class="card-title" style="color: #229A00; text-align: center;">Alface Lisa</h5>
-                                    <p class="card-text" style="text-align: justify;">Tem folhas com uma textura suave e
-                                        delicada, são planas e não têm rugas. Tende a ter um sabor suave e delicado.</p>
+                                    <h5 class="card-title" style="color: #229A00; text-align: center;">Alface Lisa
+                                    </h5>
+                                    <p class="card-text" style="text-align: justify;">Tem folhas com uma textura
+                                        suave e
+                                        delicada, são planas e não têm rugas. Tende a ter um sabor suave e delicado.
+                                    </p>
                                     <div class="d-flex justify-content-center">
-                                        <a href="#" class="card-link"
-                                            style="color: #229A00; text-decoration: none;">Receitas</a>
+                                        <a href="#" class="card-link" style="color: #229A00; text-decoration: none;"
+                                            onclick="mostrarPopup('Alface Lisa')">Receitas</a>
                                     </div>
                                 </div>
                             </div>
@@ -611,8 +609,8 @@
                     </div>
 
 
-                    <div class="col-md-2 mb-4 mx-2">
-                        <!-- ... Conteúdo do Card 1 ... -->
+                    <div class="col-md-3 mb-5">
+                        <!-- ... Conteúdo do Card 4 ... -->
                         <div class="card" style="border: 1px solid #0f560441;">
                             <!-- Adicione a borda igual à cor do card-2 -->
                             <!-- Image Background -->
@@ -628,8 +626,8 @@
                                         onduladas, possui uma textura mais crocante, tende a ter um sabor amargo e
                                         crocante.</p>
                                     <div class="d-flex justify-content-center">
-                                        <a href="#" class="card-link"
-                                            style="color: #229A00; text-decoration: none;">Receitas</a>
+                                        <a href="#" class="card-link" style="color: #229A00; text-decoration: none;"
+                                            onclick="mostrarPopup('Alface Mimosa')">Receitas</a>
                                     </div>
                                 </div>
                             </div>
@@ -637,8 +635,8 @@
                     </div>
 
 
-                    <div class="col-md-2 mb-4 mx-2">
-                        <!-- ... Conteúdo do Card 1 ... -->
+                    <div class="col-md-3 mb-5">
+                        <!-- ... Conteúdo do Card 5 ... -->
                         <div class="card" style="border: 1px solid #0f560441;">
                             <!-- Adicione a borda igual à cor do card-2 -->
                             <!-- Image Background -->
@@ -650,13 +648,17 @@
                                 <div class="card-body">
                                     <h5 class="card-title" style="color: #229A00; text-align: center;">Alface Romana
                                     </h5>
-                                    <p class="card-text" style="text-align: justify;">Suas folhas longas e firmes, que
+                                    <p class="card-text" style="text-align: justify;">Suas folhas longas e firmes,
+                                        que
                                         são ideais para enrolar e fazer wraps. Ela tem um
                                         sabor
-                                        ligeiramente amargo.</p>
+                                        ligeiramente amargo.
+                                        ㅤ
+                                        ㅤ
+                                    </p>
                                     <div class="d-flex justify-content-center">
-                                        <a href="#" class="card-link"
-                                            style="color: #229A00; text-decoration: none;">Receitas</a>
+                                        <a href="#" class="card-link" style="color: #229A00; text-decoration: none;"
+                                            onclick="mostrarPopup('Alface Romana')">Receitas</a>
                                     </div>
                                 </div>
                             </div>
@@ -666,6 +668,140 @@
                 </div>
             </div>
         </section>
+
+        <!-- Camada semi-transparente para desativar a rolagem -->
+        <div id="overlay" class="overlay" style="display: none;"></div>
+
+        <!-- Pop-up -->
+        <div id="popup" class="popup"
+            style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); display: none; background-color: #f8f8f8; border: 2px solid #229A00; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); padding: 20px; max-width: 400px;">
+            <h2 id="popupTitle" style="color: #229A00; text-align: center; font-size: 24px;"></h2>
+            <p id="popupContent" style="text-align: justify; font-size: 16px;"></p>
+            <button onclick="fecharPopup()"
+                style="background-color: #229A00; color: #fff; border: none; padding: 10px 20px; font-size: 16px; cursor: pointer;">Fechar</button>
+        </div>
+
+        <!-- JavaScript -->
+        <script>
+
+            var scrollTop = 0;
+
+            function mostrarPopup(title) {
+                var popup = document.getElementById("popup");
+                var overlay = document.getElementById("overlay");
+                var popupTitle = document.getElementById("popupTitle");
+                var popupContent = document.getElementById("popupContent");
+
+                // Salve a posição atual da tela
+                scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+ 
+                if (title === 'Alface Crespa') {
+                    popupTitle.textContent = "Salada caesar";
+                    popupContent.innerHTML = "<br> INGREDIENTES: <br> 2 xícaras (chá) de pão amanhecido cortado em cubos de 1 cm <br> 2 colheres (sopa) de azeite <br> sal a gosto <br><br> MODO DE PREPARO:<br> Leve uma frigideira antiaderente ao fogo médio. Quando aquecer, regue com 2 colheres (sopa) de azeite e acrescente os cubos de pão. Tempere com sal e mantenha em fogo médio por cerca de 5 minutos, mexendo de vez em quando, até dourar.Transfira os croutons para uma travessa e deixe esfriar completamente antes de armazenar ou servir  eles ficam mais crocantes depois de frios." ;
+                } else if (title === 'Alface Lisa') {
+                    popupTitle.textContent = "Salada de folhas com kani e um toque de gengibre";
+                    popupContent.innerHTML = " <br> Ingredientes: <br> 1/2 pé de alface americana <br> 1/2 maço de alface roxa <br> 1/2 maço de alface mimosa <br> 5 tomates secos (conservado no alho e no azeite) <br> 10 azeitonas <br> 4 tubetes de Kani Kama <br><br> <br>Molho:<br> 1/4 xícara (de chá) de azeite de oliva extra virgem <br> 3 colheres (de sopa) de suco de limão <br> 3 colheres (de sopa) de água filtrada <br> 1/2 colher (de chá) de sal <br> 1 colher (de café) de gengibre em pó <br> <br> Modo de Preparo:Lave e higienize as folhas. Seque bem. Arrume em um prato grande e raso ou bandeja as alfaces. Comece com a alface  mimosa, depois arrume as folhas de alface americana e por último a alface roxa. Assim você terá um destaque das cores diferentes da alface. Depois é só arrumar os tomates secos, as azeitonas e  o kani cortado em tiras.";
+                } else if (title === 'Alface Mimosa') {
+                    popupTitle.textContent = "Salada de alface com maçã verde: ";
+                    popupContent.innerHTML = "<br> INGREDIENTES:<br> 3 colheres (chá) de mostarda <br> 2 e meia colheres (chá) de açúcar <br> 2 colheres (sopa) de manteiga derretida <br> 2 ovos levemente batidos <br> meia xícara (chá) de creme de leite <br> 5 colheres (sopa) de vinagre de vinho branco <br> 2 sachês de Tempero SAZÓN® Saladas <br> 10 folhas de alface lisa <br> 2 xícaras (chá) de ramos de agrião <br> 1 maçã verde cortada em gomos <br> 1 mexerica média cortada em gomos ao meio <br> 8 tomates-cereja <br> 2 ramos de cebolinha verde cortados em rodelas <br> <br> MODO DE PREPARO: <br>Em uma panela pequena, coloque a mostarda, o açúcar, a manteiga, os ovos, o creme de leite, o vinagre e o Tempero SAZÓN®, e leve ao fogo médio, em banho-maria, para aquecer.Cozinhe, sem parar de mexer, por aproximadamente 5 minutos, ou até que o molho encorpe parcialmente. Transfira para uma tigela e leve para gelar.Em uma saladeira, disponha as folhas de alface, o agrião, a maçã, a mexerica e os tomates e, por último, a cebolinha.Regue com o molho e sirva em seguida.";
+                } else if (title === 'Alface Romana') {
+                    popupTitle.textContent = "Receitas de Alface Romana";
+                    popupContent.innerHTML = "<br>Ingredientes:<br> 1/2 maço de chicória <br> 1/2 maço de alface frisée <br> 1/2 pé de alface americana pequeno <br> 4 dentes de alho <br> 3 colheres (sopa) de azeite de oliva <br> 1 xícara (chá) de grão-de-bico em conserva <br> Sal a gosto <br><br> Modo de preparo: <br> Limpe e lave as folhas das verduras e seque-as. Reserve. Descasque os dentes de alho, corte-os em lâminas e leve ao fogo numa frigideira com o azeite de oliva. Frite-o, mexendo de vez em quando, por 2 minutos, ou até dourar. Adicione o sal e misture delicadamente. Retire do fogo e reserve. Numa saladeira, disponha as folhas, adicione o grão-de-bico e regue com o alho e o azeite de oliva.";
+                }
+
+
+                // Exibe o pop-up e a camada semi-transparente
+                popup.style.display = "block";
+                overlay.style.display = "block";
+
+                // Define o popup como container fluid
+                popup.classList.add("container-fluid");
+
+                // Desativa a rolagem do site
+                document.body.style.overflow = "hidden";
+
+                // Define o popup como position: fixed
+                popup.style.position = "fixed";
+
+                // Mantém a tela na mesma posição
+                window.scrollTo(0, scrollTop);
+            }
+
+            function fecharPopup() {
+                var popup = document.getElementById("popup");
+                var overlay = document.getElementById("overlay");
+
+                // Oculta o pop-up e a camada semi-transparente
+                popup.style.display = "none";
+                overlay.style.display = "none";
+
+                // Reativa a rolagem do site
+                document.body.style.overflow = "auto";
+
+                // Retorna a tela à posição original
+                window.scrollTo(0, scrollTop);
+            }
+
+
+        </script>
+
+        <style>
+            .overlay {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5);
+            }
+
+            #popup {
+                max-height: 80%;
+                overflow-y: auto;
+            }
+
+            .container-fluid {
+                width: 100%;
+                margin: 0 auto;
+            }
+
+            .popup {
+                display: none;
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: #fff;
+                z-index: 9999;
+                padding: 20px;
+                border: 1px solid #000;
+            }
+
+            .popup-content {
+                position: relative;
+            }
+
+            .close {
+                position: absolute;
+                top: 0;
+                right: 0;
+                padding: 5px;
+                cursor: pointer;
+            }
+
+            .overlay {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.7);
+                z-index: 9998;
+                cursor: pointer;
+            }
+        </style>
+
 
 
         <!-- ----------------------------Rodapé---------------------------------------------- -->

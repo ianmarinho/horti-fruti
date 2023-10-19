@@ -157,8 +157,10 @@
 
         <nav class="navbar navbar-expand-lg bg-body-tertiary" style="padding-bottom: 40px;">
             <div class="container">
-                <a class="navbar-brand" href="index.html" style="color: #229A00; width: 100px; padding-left: 20px;" id="cabecalhoName">Nutri-Verde</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="index.html" style="color: #229A00; width: 100px; padding-left: 20px;"
+                    id="cabecalhoName">Nutri-Verde</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
@@ -220,8 +222,10 @@
                 </div>
             </div>
             <!---------------------------------------------- Cards ------------------------------------------------------------>
-            <section class="cards-1 d-flex justify-content-center" style="padding-bottom: 40px;">
-                <div class="row justify-content-center mt-4">
+
+
+            <section class="cards-1 d-flex justify-content-center overflow-hidden" style="padding-bottom: 40px;">
+                <div class="row justify-content-center"> <!-- Adicione a classe justify-content-center aqui -->
                     <div class="col-md-2 mb-4 custom-col mx-3">
                         <div class="card mx-2" style="width: 15rem; background-color: #0f560441;">
                             <img src="/imagens/cards 1/rucula.png" class="card-img-top" alt="...">
@@ -309,6 +313,8 @@
                     </div>
                 </div>
             </section>
+
+
             <!-------------------------------------------------------- Segunda Postagem ------------------------------------------------------>
             <div class="blog-2"
                 style="display: flex; flex-direction: column; padding: 20px; margin-bottom: 20px; background-color: #f8f8f8; border-radius: 15px;">
@@ -359,88 +365,126 @@
                 </div>
             </div>
             <!---------------------------------------------- Cards ------------------------------------------------------------>
-            <section class="cards-2 d-flex justify-content-center" style="padding-bottom: 40px;">
-                
-                <div class="row justify-content-center mt-4">
-                    <div class="col-md-2 mb-4 custom-col mx-3">
-                        <div class="card mx-2" style="width: 15rem; background-color: #0f560441;">
-                            <img src="/imagens/cards 2/alface crespa.png" class="card-img-top" alt="...">
-                            <div class="card-body text-center" style="background-color: #f8f8f8;">
-                                <h5 class="card-title"> Alface Crespa</h5>
-                                <p class="card-text">
-                                    Folhas mais resistentes e possui uma textura mais robusta em comparação com a alface
-                                    mimosa.
-                                </p>
-                                <div class="d-flex justify-content-center">
-                                    <a href="#" class="card-link"
-                                        style="color: #229A00; text-decoration: none;">Receitas</a>
+
+
+            <section class="cards-2" style="padding-bottom: 40px;">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <!-- Card 1 -->
+                        <div class="col-md-3 mb-5">
+                            <div class="card" style="border: 1px solid #0f560441;">
+                                <!-- Adicione a borda igual à cor do card-2 -->
+                                <!-- Image Background -->
+                                <div class="card-image-background" style="background-color: #0f560441;">
+                                    <img src="/imagens/cards 2/alface crespa.png" class="card-img-top" alt="...">
+                                </div>
+                                <!-- Text Background -->
+                                <div class="card-text-background" style="background-color: #f8f8f8;">
+                                    <div class="card-body">
+                                        <h5 class="card-title" style="color: #229A00; text-align: center;">Alface Crespa
+                                        </h5>
+                                        <p class="card-text" style="text-align: justify;">Folhas mais resistentes e
+                                            possui
+                                            uma textura mais robusta em comparação com a alface mimosa.
+                                            ㅤ
+                                            ㅤ
+                                            ㅤ
+                                        </p>
+                                        <div class="d-flex justify-content-center">
+                                            <a href="#" class="card-link"
+                                                style="color: #229A00; text-decoration: none;">Receitas</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-2 mb-4 custom-col mx-3">
-                        <div class="card mx-2" style="width: 15rem; background-color: #0f560441;">
-                            <img src="/imagens/cards 2/alface mimosa.png" class="card-img-top" alt="...">
-                            <div class="card-body text-center" style="background-color: #f8f8f8;">
-                                <h5 class="card-title"> Alface Mimosa </h5>
-                                <p class="card-text">
-                                    Suas folhas tendem a ser mais crocantes e têm uma textura ligeiramente mais frágil.
-                                </p>
-                                <div class="d-flex justify-content-center">
-                                    <a href="#" class="card-link"
-                                        style="color: #229A00; text-decoration: none;">Receitas</a>
+
+
+                        <!-- Card 2 -->
+
+                        <div class="col-md-3 mb-5">
+                            <!-- ... Conteúdo do Card 2 ... -->
+                            <div class="card" style="border: 1px solid #0f560441;">
+                                <!-- Adicione a borda igual à cor do card-2 -->
+                                <!-- Image Background -->
+                                <div class="card-image-background" style="background-color: #0f560441;">
+                                    <img src="/imagens/cards 2/alface lisa.png" class="card-img-top" alt="...">
+                                </div>
+                                <!-- Text Background -->
+                                <div class="card-text-background" style="background-color: #f8f8f8;">
+                                    <div class="card-body">
+                                        <h5 class="card-title" style="color: #229A00; text-align: center;">Alface Lisa
+                                        </h5>
+                                        <p class="card-text" style="text-align: justify;">Tem folhas com uma textura
+                                            suave e
+                                            delicada, são planas e não têm rugas. Tende a ter um sabor suave e delicado.
+                                        </p>
+                                        <div class="d-flex justify-content-center">
+                                            <a href="#" class="card-link"
+                                                style="color: #229A00; text-decoration: none;">Receitas</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-2 mb-4 custom-col mx-3">
-                        <div class="card mx-2" style="width: 15rem; background-color: #0f560441;">
-                            <img src="/imagens/cards 2/alface romana.png" class="card-img-top" alt="...">
-                            <div class="card-body text-center" style="background-color: #f8f8f8;">
-                                <h5 class="card-title"> Alface Romana </h5>
-                                <p class="card-text">
-                                    Suas folhas longas e firmes, que são ideais para enrolar e fazer wraps. Ela tem um
-                                    sabor
-                                    ligeiramente amargo.
-                                </p>
-                                <div class="d-flex justify-content-center">
-                                    <a href="#" class="card-link"
-                                        style="color: #229A00; text-decoration: none;">Receitas</a>
+
+
+                        <div class="col-md-3 mb-5">
+                            <!-- ... Conteúdo do Card 4 ... -->
+                            <div class="card" style="border: 1px solid #0f560441;">
+                                <!-- Adicione a borda igual à cor do card-2 -->
+                                <!-- Image Background -->
+                                <div class="card-image-background" style="background-color: #0f560441;">
+                                    <img src="/imagens/cards 2/alface mimosa.png" class="card-img-top" alt="...">
+                                </div>
+                                <!-- Text Background -->
+                                <div class="card-text-background" style="background-color: #f8f8f8;">
+                                    <div class="card-body">
+                                        <h5 class="card-title" style="color: #229A00; text-align: center;">Alface Mimosa
+                                        </h5>
+                                        <p class="card-text" style="text-align: justify;">Tem folhas mais grossas e
+                                            onduladas, possui uma textura mais crocante, tende a ter um sabor amargo e
+                                            crocante.</p>
+                                        <div class="d-flex justify-content-center">
+                                            <a href="#" class="card-link"
+                                                style="color: #229A00; text-decoration: none;">Receitas</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-2 mb-4 custom-col mx-3">
-                        <div class="card mx-2" style="width: 15rem; background-color: #0f560441;">
-                            <img src="/imagens/cards 2/alface lisa.png" class="card-img-top" alt="...">
-                            <div class="card-body text-center" style="background-color: #f8f8f8;">
-                                <h5 class="card-title"> Alface Lisa</h5>
-                                <p class="card-text">
-                                    Suas folhas sâo lisas e macias. Possui um sabor suave e é muito usada em saladas e
-                                    sanduíches.
-                                </p>
-                                <div class="d-flex justify-content-center">
-                                    <a href="#" class="card-link"
-                                        style="color: #229A00; text-decoration: none;">Receitas</a>
+
+
+                        <div class="col-md-3 mb-5">
+                            <!-- ... Conteúdo do Card 5 ... -->
+                            <div class="card" style="border: 1px solid #0f560441;">
+                                <!-- Adicione a borda igual à cor do card-2 -->
+                                <!-- Image Background -->
+                                <div class="card-image-background" style="background-color: #0f560441;">
+                                    <img src="/imagens/cards 2/alface romana.png" class="card-img-top" alt="...">
+                                </div>
+                                <!-- Text Background -->
+                                <div class="card-text-background" style="background-color: #f8f8f8;">
+                                    <div class="card-body">
+                                        <h5 class="card-title" style="color: #229A00; text-align: center;">Alface Romana
+                                        </h5>
+                                        <p class="card-text" style="text-align: justify;">Suas folhas longas e firmes,
+                                            que
+                                            são ideais para enrolar e fazer wraps. Ela tem um
+                                            sabor
+                                            ligeiramente amargo.
+                                            ㅤ
+                                            ㅤ
+                                        </p>
+                                        <div class="d-flex justify-content-center">
+                                            <a href="#" class="card-link"
+                                                style="color: #229A00; text-decoration: none;">Receitas</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-2 mb-4 custom-col mx-3">
-                        <div class="card mx-2" style="width: 15rem; background-color: #0f560441;">
-                            <img src="/imagens/cards 2/alface goumet.png" class="card-img-top" alt="...">
-                            <div class="card-body text-center" style="background-color: #f8f8f8;">
-                                <h5 class="card-title"> Alface Gourmet </h5>
-                                <p class="card-text">
-                                    refere a variedades de alface, cultivados de forma mais cuidadosa, isso pode incluir
-                                    tipos diferentes de alface.
-                                </p>
-                                <div class="d-flex justify-content-center">
-                                    <a href="#" class="card-link"
-                                        style="color: #229A00; text-decoration: none;">Receitas</a>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </section>
