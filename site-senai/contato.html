@@ -169,10 +169,12 @@
 
 
         <section class="contato">
-            <div class="row" >
+            <div class="row">
+
                 <div class="col-md-6 d-flex flex-column align-items-center">
-                    <h1 class="mt-5" style="font-family: 'Courier New';">Contato</h1>
-                    <div class="contact-info ml-md-5" style="">
+                    <br>
+                    <h1 class="mt-5" style="font-family: 'Courier New'; text-align: center;">Contato</h1>
+                    <div class="contact-info ml-md-5" style="padding: 95px;">
                         <!-- Seu conteúdo da div de informações de contato -->
                         <p class="mb-3">
                             <i class="fas fa-map-marker-alt" style="color: #229A00;"></i>
@@ -180,12 +182,14 @@
                             <br>
                             R. Orvalho da Manhã, Parque Sonhos Dourados, Araguaína - TO
                         </p>
+                        <br>
                         <p class="mb-3 no-print">
                             <i class="fab fa-whatsapp" style="color: #229A00;"></i>
                             Whatsapp: <br>
                             <a href="https://api.whatsapp.com/send?phone=5528999361170" target="_blank"
                                 style="text-decoration: none; color: #333;" class="text-dark">(28) 99936-1170</a>
                         </p>
+                        <br>
                         <p class="mb-3">
                             <i class="fas fa-phone" style="color: #229A00;"></i>
                             Telefone: <br> (28) 99936-1170
@@ -196,53 +200,60 @@
                             <a href="mailto:folhaverdenfe@gmail.com" class="text-dark"
                                 style="text-decoration: none; color: #333;">folhaverdenfe@gmail.com</a>
                         </p>
+                        <br>
                     </div>
                 </div>
 
                 <div class="col-md-6">
 
                     <div class="formulario" style="margin: 30px;">
-                        <form action="formulario">
+                        <form action="https://api.staticforms.xyz/submit" method="post">
+                            <!-- Não inclua a chave de API como um campo visível -->
+                            <input type="hidden" name="accessKey" value="ef207bb5-d990-43a4-ba70-55f50a1b3327">
+
                             <!-- Seu formulário -->
                             <h1 class="mb-4" style="font-family: 'Courier New'; text-align: center; margin-top: 30px;">
                                 Fale Conosco</h1>
                             <div class="form-group mb-4">
                                 <label for="nome">Nome:</label>
-                                <input type="text" class="form-control square-input" id="nome" placeholder="Seu Nome">
+                                <input type="text" class="form-control square-input" id="nome" name="name"
+                                    placeholder="Seu Nome" required>
                             </div>
                             <div class="form-group mb-4">
                                 <label for="email">Email:</label>
-                                <input type="email" class="form-control square-input" id="email"
-                                    placeholder="Seu Email">
+                                <input type="email" class="form-control square-input" id="email" name="email"
+                                    placeholder="Seu Email" required>
                             </div>
                             <div class="form-group mb-4">
                                 <label for="contato">Contato:</label>
-                                <input type="text" class="form-control square-input" id="contato"
+                                <input type="text" class="form-control square-input" id="contato" name="phone"
                                     placeholder="Seu Contato">
                             </div>
                             <div class="form-group mb-4">
                                 <label for="assunto">Assunto:</label>
-                                <input type="text" class="form-control square-input" id="assunto" placeholder="Assunto">
+                                <input type="text" class="form-control square-input" id="assunto" name="subject"
+                                    placeholder="Assunto">
                             </div>
                             <div class="form-group mb-4">
                                 <label for="mensagem">Mensagem:</label>
-                                <textarea class="form-control" id="mensagem" rows="4"
-                                    placeholder="Sua Mensagem"></textarea>
+                                <textarea class="form-control" id="mensagem" name="message" rows="4"
+                                    placeholder="Sua Mensagem" required></textarea>
                             </div>
-                            <button type="button" class="btn btn-success"
+                            <input type="hidden" name="replyTo" value="iansilvamarinho593@gmail.com">
+                            <input type="hidden" name="redirectTo" value="contato.html">
+                            <button type="submit" class="btn btn-success"
                                 style="background-color: #229A00;">Enviar</button>
                         </form>
                     </div>
+
                 </div>
             </div>
         </section>
     </div>
 
-
-
-
     <div class="aviso-rodape ">
-        <div class="row" style="border-top: solid 3px; padding-top: 15px; border-color: #229A00; background-color: #fff;">
+        <div class="row"
+            style="border-top: solid 3px; padding-top: 15px; border-color: #229A00; background-color: #fff;">
             <div class="col-lg-4">
                 <section class="widget" style="padding-left: 5px;">
                     <!-- Coluna de Atendimento -->
@@ -285,12 +296,13 @@
                         </li>
                         <li>
                             <i class="fas fa-link"></i>
-                            <a href="contato.html" class="text-dark"
-                                style="text-decoration: none; color: #f8f8f8;">Fale Conosco</a>
+                            <a href="contato.html" class="text-dark" style="text-decoration: none; color: #f8f8f8;">Fale
+                                Conosco</a>
                         </li>
                         <li class="hidden-on-mobile">
                             <i class="fas fa-link"></i>
-                            <a href="sobre.html" class="text-dark" style="text-decoration: none; color: #f8f8f8;">Sobre</a>
+                            <a href="sobre.html" class="text-dark"
+                                style="text-decoration: none; color: #f8f8f8;">Sobre</a>
                         </li>
                     </ul>
                 </section>
@@ -305,30 +317,31 @@
                             <a href="https://www.facebook.com/seufacebook" class="text-dark"
                                 style="text-decoration: none; color: #333;">Facebook</a>
                         </li>
-                    
+
                         <li>
                             <i class="fab fa-twitter" style="color: #229A00;"></i>
                             <a href="https://www.twitter.com/seutwitter" class="text-dark"
                                 style="text-decoration: none; color: #333;">Twitter</a>
                         </li>
-                    
+
                         <li class="no-print">
                             <i class="fab fa-whatsapp" style="color: #229A00;"></i>
                             <a href="https://api.whatsapp.com/send?phone=5528999361170" target="_blank"
                                 style="text-decoration: none; color: #333;" class="text-dark">WhatsApp</a>
                         </li>
-                    
+
                         <li class="no-print">
                             <i class="fab fa-instagram" style="color: #229A00;"></i>
                             <a href="https://instagram.com/nutriverdehidroponia?igshid=MzRlODBiNWFlZA==" target="_blank"
                                 style="text-decoration: none; color: #333;" class="text-dark">Instagram</a>
                         </li>
                     </ul>
-                    
+
                 </section>
             </div>
         </div>
     </div>
+
 
     <footer class="text-center py-3" style="background-color: #f8f8f89c; color: #333; margin: 0;">
         &copy; 2023 Seu Site. Todos os direitos reservados.
